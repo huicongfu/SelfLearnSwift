@@ -10,12 +10,52 @@ import UIKit
 
 class FirstWeekOneDemo: UIViewController {
 
+    @IBOutlet var inputTF: UITextField!
+    
+    @IBOutlet var tipLabel: UILabel!
+    @IBOutlet var countLabel: UILabel!
+    
+    @IBOutlet var totalNumLabel: UILabel!
+    
+    @IBOutlet var mySlider: UISlider!
+    
+    var toolBar: UIToolbar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.initialize()
+        
     }
 
+    func initialize () {
+        toolBar = UIToolbar.init(frame: CGRect.init(x: 0, y: 0, width: self.view.frame.width, height: 35))
+        let sureBtn = UIBarButtonItem(title: "完成", style: .plain, target: self, action: #selector(doneNum))
+        let spaceBtn = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        toolBar.items = [spaceBtn ,sureBtn]
+        
+        mySlider.addTarget(self, action:#selector(changeLabelValued(slider:)) , for: UIControlEvents.valueChanged)
+        
+        inputTF.inputAccessoryView = toolBar
+    }
+    
+    // MARK - slider
+    func changeLabelValued (slider:UISlider) {
+        let count = slider.value
+        
+        if ((inputTF.text?.characters.count)! > 0) {
+            let value = Float(inputTF.text!)
+            countLabel.text = String(value! * count)
+            tipLabel.text = "Tip(" + "\(count)/)"
+        }
+        
+    }
+    
+    func doneNum () {
+        self.view.endEditing(false)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

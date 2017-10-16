@@ -12,7 +12,7 @@ private let cellId = "cellId"
 
 class FirstWeekVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
-    let dataArray = ["第一个","第二个","第三个","第四个"]
+    let dataArray = ["第一个-Tip Calculator","第二个-Names","第三个","第四个"]
     var tableView = UITableView.init(frame: UIScreen.main.bounds, style: UITableViewStyle.plain)
     
     override func viewDidLoad() {
