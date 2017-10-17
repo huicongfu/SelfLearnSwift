@@ -46,8 +46,11 @@ class FirstWeekOneDemo: UIViewController {
         
         if ((inputTF.text?.characters.count)! > 0) {
             let value = Float(inputTF.text!)
-            countLabel.text = String(value! * count)
-            tipLabel.text = "Tip(" + "\(count)/)"
+            let tipV = value! * count
+            
+            countLabel.text = String(format:"%.2f",tipV)
+            tipLabel.text = String.init(format: "Tip(%.2f)", count)
+            totalNumLabel.text = String.init(format: "%.2f", value! + tipV)
         }
         
     }

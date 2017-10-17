@@ -10,6 +10,8 @@
 		875E17441F9348F600020A3F /* FirstWeekVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875E17431F9348F600020A3F /* FirstWeekVC.swift */; };
 		875E17491F934D0A00020A3F /* FirstWeekOneDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875E17471F934D0A00020A3F /* FirstWeekOneDemo.swift */; };
 		875E174A1F934D0A00020A3F /* FirstWeekOneDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 875E17481F934D0A00020A3F /* FirstWeekOneDemo.xib */; };
+		875E174D1F9665A900020A3F /* FirstWeekTwoDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875E174B1F9665A900020A3F /* FirstWeekTwoDemo.swift */; };
+		875E174E1F9665A900020A3F /* FirstWeekTwoDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 875E174C1F9665A900020A3F /* FirstWeekTwoDemo.xib */; };
 		87A96CDD1F8F967700CAC2B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A96CDC1F8F967700CAC2B4 /* AppDelegate.swift */; };
 		87A96CDF1F8F967700CAC2B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A96CDE1F8F967700CAC2B4 /* ViewController.swift */; };
 		87A96CE21F8F967700CAC2B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87A96CE01F8F967700CAC2B4 /* Main.storyboard */; };
@@ -40,6 +42,8 @@
 		875E17431F9348F600020A3F /* FirstWeekVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstWeekVC.swift; sourceTree = "<group>"; };
 		875E17471F934D0A00020A3F /* FirstWeekOneDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstWeekOneDemo.swift; sourceTree = "<group>"; };
 		875E17481F934D0A00020A3F /* FirstWeekOneDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstWeekOneDemo.xib; sourceTree = "<group>"; };
+		875E174B1F9665A900020A3F /* FirstWeekTwoDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstWeekTwoDemo.swift; sourceTree = "<group>"; };
+		875E174C1F9665A900020A3F /* FirstWeekTwoDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstWeekTwoDemo.xib; sourceTree = "<group>"; };
 		87A96CD91F8F967700CAC2B4 /* SwiftSelfStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSelfStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A96CDC1F8F967700CAC2B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87A96CDE1F8F967700CAC2B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +98,8 @@
 				875E17431F9348F600020A3F /* FirstWeekVC.swift */,
 				875E17471F934D0A00020A3F /* FirstWeekOneDemo.swift */,
 				875E17481F934D0A00020A3F /* FirstWeekOneDemo.xib */,
+				875E174B1F9665A900020A3F /* FirstWeekTwoDemo.swift */,
+				875E174C1F9665A900020A3F /* FirstWeekTwoDemo.xib */,
 			);
 			path = "First Week";
 			sourceTree = "<group>";
@@ -260,6 +266,7 @@
 				875E174A1F934D0A00020A3F /* FirstWeekOneDemo.xib in Resources */,
 				87A96CE71F8F967700CAC2B4 /* LaunchScreen.storyboard in Resources */,
 				87A96CE41F8F967700CAC2B4 /* Assets.xcassets in Resources */,
+				875E174E1F9665A900020A3F /* FirstWeekTwoDemo.xib in Resources */,
 				87A96CE21F8F967700CAC2B4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +295,7 @@
 				875E17491F934D0A00020A3F /* FirstWeekOneDemo.swift in Sources */,
 				875E17441F9348F600020A3F /* FirstWeekVC.swift in Sources */,
 				87A96CDF1F8F967700CAC2B4 /* ViewController.swift in Sources */,
+				875E174D1F9665A900020A3F /* FirstWeekTwoDemo.swift in Sources */,
 				87A96CDD1F8F967700CAC2B4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

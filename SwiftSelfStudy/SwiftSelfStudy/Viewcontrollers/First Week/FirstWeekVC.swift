@@ -50,6 +50,11 @@ class FirstWeekVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
             vc.navigationItem.title = dataArray[indexPath.row]
             self.navigationController?.pushViewController(vc, animated: true)
             break
+        case 1:
+            let vc = FirstWeekTwoDemo.init(nibName:"FirstWeekTwoDemo", bundle: Bundle.main)
+            vc.navigationItem.title = dataArray[indexPath.row]
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
         default:
             break
         }
