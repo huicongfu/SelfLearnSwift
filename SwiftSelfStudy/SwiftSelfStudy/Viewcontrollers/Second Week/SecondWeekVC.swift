@@ -1,8 +1,8 @@
 //
-//  FirstWeekVC.swift
+//  SecondWeekVC.swift
 //  SwiftSelfStudy
 //
-//  Created by fu on 2017/10/15.
+//  Created by hunuo on 2017/10/24.
 //  Copyright © 2017年 fhc. All rights reserved.
 //
 
@@ -10,15 +10,20 @@ import UIKit
 
 private let cellId = "cellId"
 
-class FirstWeekVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
+class SecondWeekVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
-    let dataArray = ["第一个-Tip Calculator","第二个-Names","第三个","第四个"]
+    let dataArray = ["第一个-Contacts","第二个","第三个","第四个"]
     var tableView = UITableView.init(frame: UIScreen.main.bounds, style: UITableViewStyle.plain)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         self.createUI()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
     }
     
     func createUI() {
@@ -60,15 +65,11 @@ class FirstWeekVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
             vc.navigationItem.title = dataArray[indexPath.row]
             self.navigationController?.pushViewController(vc, animated: true)
             break
-        case 3:
-            let vc = FirstWeekFourthlyDemo.init(nibName:"FirstWeekFourthlyDemo", bundle: Bundle.main)
-            vc.navigationItem.title = dataArray[indexPath.row]
-            self.navigationController?.pushViewController(vc, animated: true)
-            break
         default:
             break
         }
     }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -1,0 +1,103 @@
+[
+    {
+        "name": "亚洲",
+        "currentId": 1,
+        "parentId": 0,
+        "childData": [
+            {
+                "name": "中国",
+                "currentId": 100,
+                "parentId": 1,
+                "childData": [
+                    {
+                        "name": "北京",
+                        "currentId": 100201,
+                        "parentId": 100,
+                        "childData": []
+                    },
+                    {
+                        "name": "上海",
+                        "currentId": 100202,
+                        "parentId": 100,
+                        "childData": []
+                    },
+                    {
+                        "name": "深圳",
+                        "currentId": 100203,
+                        "parentId": 100,
+                        "childData": []
+                    },
+                    {
+                        "name": "广州",
+                        "currentId": 100204,
+                        "parentId": 100,
+                        "childData": []
+                    }
+                ]
+            },
+            {
+                "name": "俄罗斯",
+                "currentId": 101,
+                "parentId": 1,
+                "childData": [
+                    {
+                        "name": "莫斯科",
+                        "currentId": 101201,
+                        "parentId": 101,
+                        "childData": []
+                    },
+                    {
+                        "name": "新西伯利亚",
+                        "currentId": 101202,
+                        "parentId": 101,
+                        "childData": []
+                    },
+                    {
+                        "name": "叶卡捷琳堡",
+                        "currentId": 101203,
+                        "parentId": 101,
+                        "childData": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "南美洲",
+        "currentId": 2,
+        "parentId": 0,
+        "childData": [
+            {
+                "name": "巴西",
+                "currentId": 200,
+                "parentId": 2,
+                "childData": []
+            },
+            {
+                "name": "阿根廷",
+                "currentId": 201,
+                "parentId": 2,
+                "childData": []
+            }
+        ]
+    },
+    {
+        "name": "澳洲",
+        "currentId": 3,
+        "parentId": 0,
+        "childData": [
+            {
+                "name": "澳大利亚",
+                "currentId": 300,
+                "parentId": 3,
+                "childData": []
+            },
+            {
+                "name": "新西兰",
+                "currentId": 301,
+                "parentId": 3,
+                "childData": []
+            }
+        ]
+    }
+]

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B9EA15A1F9EC73800AF5CBB /* SecondWeekVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9EA1591F9EC73800AF5CBB /* SecondWeekVC.swift */; };
+		5B9EA15C1F9EDC8400AF5CBB /* FirstWeekFourthlyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9EA15B1F9EDC8400AF5CBB /* FirstWeekFourthlyModel.swift */; };
+		5B9EA15E1F9EE9FB00AF5CBB /* countryData.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B9EA15D1F9EE9FB00AF5CBB /* countryData.json */; };
 		875E17441F9348F600020A3F /* FirstWeekVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875E17431F9348F600020A3F /* FirstWeekVC.swift */; };
 		875E17491F934D0A00020A3F /* FirstWeekOneDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875E17471F934D0A00020A3F /* FirstWeekOneDemo.swift */; };
 		875E174A1F934D0A00020A3F /* FirstWeekOneDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 875E17481F934D0A00020A3F /* FirstWeekOneDemo.xib */; };
@@ -43,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B9EA1591F9EC73800AF5CBB /* SecondWeekVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondWeekVC.swift; sourceTree = "<group>"; };
+		5B9EA15B1F9EDC8400AF5CBB /* FirstWeekFourthlyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstWeekFourthlyModel.swift; sourceTree = "<group>"; };
+		5B9EA15D1F9EE9FB00AF5CBB /* countryData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countryData.json; sourceTree = "<group>"; };
 		875E17431F9348F600020A3F /* FirstWeekVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstWeekVC.swift; sourceTree = "<group>"; };
 		875E17471F934D0A00020A3F /* FirstWeekOneDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstWeekOneDemo.swift; sourceTree = "<group>"; };
 		875E17481F934D0A00020A3F /* FirstWeekOneDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstWeekOneDemo.xib; sourceTree = "<group>"; };
@@ -92,9 +98,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B9EA1581F9EC66A00AF5CBB /* Second Week */ = {
+			isa = PBXGroup;
+			children = (
+				5B9EA1591F9EC73800AF5CBB /* SecondWeekVC.swift */,
+			);
+			path = "Second Week";
+			sourceTree = "<group>";
+		};
 		875E173F1F9343CD00020A3F /* Viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
+				5B9EA1581F9EC66A00AF5CBB /* Second Week */,
 				875E17401F93442B00020A3F /* First Week */,
 			);
 			path = Viewcontrollers;
@@ -112,6 +127,8 @@
 				875E17501F9A33E100020A3F /* FirstWeekThreeDemo.xib */,
 				875E17531F9C7AF100020A3F /* FirstWeekFourthlyDemo.swift */,
 				875E17541F9C7AF100020A3F /* FirstWeekFourthlyDemo.xib */,
+				5B9EA15B1F9EDC8400AF5CBB /* FirstWeekFourthlyModel.swift */,
+				5B9EA15D1F9EE9FB00AF5CBB /* countryData.json */,
 			);
 			path = "First Week";
 			sourceTree = "<group>";
@@ -281,6 +298,7 @@
 				875E174E1F9665A900020A3F /* FirstWeekTwoDemo.xib in Resources */,
 				875E17521F9A33E100020A3F /* FirstWeekThreeDemo.xib in Resources */,
 				87A96CE21F8F967700CAC2B4 /* Main.storyboard in Resources */,
+				5B9EA15E1F9EE9FB00AF5CBB /* countryData.json in Resources */,
 				875E17561F9C7AF100020A3F /* FirstWeekFourthlyDemo.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,12 +324,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B9EA15C1F9EDC8400AF5CBB /* FirstWeekFourthlyModel.swift in Sources */,
 				875E17491F934D0A00020A3F /* FirstWeekOneDemo.swift in Sources */,
 				875E17441F9348F600020A3F /* FirstWeekVC.swift in Sources */,
 				875E17511F9A33E100020A3F /* FirstWeekThreeDemo.swift in Sources */,
 				87A96CDF1F8F967700CAC2B4 /* ViewController.swift in Sources */,
 				875E17551F9C7AF100020A3F /* FirstWeekFourthlyDemo.swift in Sources */,
 				875E174D1F9665A900020A3F /* FirstWeekTwoDemo.swift in Sources */,
+				5B9EA15A1F9EC73800AF5CBB /* SecondWeekVC.swift in Sources */,
 				87A96CDD1F8F967700CAC2B4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

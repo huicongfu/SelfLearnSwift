@@ -20,7 +20,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         super.viewDidLoad()
         self.navigationItem.title = "Swift Demo"
         
-        for index in 0..<10 {
+        for index in 0..<4 {
             dataArray.add("第\(index+1)周Demo")
         }
         
@@ -44,7 +44,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return dataArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -60,6 +60,11 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         switch indexPath.row {
         case 0:
             let vc = FirstWeekVC()
+            vc.navigationItem.title = dataArray[indexPath.row] as? String
+            self.navigationController?.pushViewController(vc , animated: true)
+            break
+        case 1:
+            let vc = SecondWeekVC()
             vc.navigationItem.title = dataArray[indexPath.row] as? String
             self.navigationController?.pushViewController(vc , animated: true)
             break
