@@ -21,11 +21,6 @@ class SecondWeekVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         self.createUI()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-    }
-    
     func createUI() {
         tableView.delegate = self
         tableView.dataSource = self
@@ -51,7 +46,7 @@ class SecondWeekVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
-            let vc = FirstWeekOneDemo.init(nibName:"FirstWeekOneDemo", bundle: Bundle.main)
+            let vc = SecondWeekOneDemo.init(nibName:"SecondWeekOneDemo", bundle: Bundle.main)
             vc.navigationItem.title = dataArray[indexPath.row]
             self.navigationController?.pushViewController(vc, animated: true)
             break
