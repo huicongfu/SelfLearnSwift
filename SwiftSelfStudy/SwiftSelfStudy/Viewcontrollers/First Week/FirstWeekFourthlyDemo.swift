@@ -9,6 +9,7 @@
 import UIKit
 
 let kWidth = UIScreen.main.bounds.size.width
+let kHeight = UIScreen.main.bounds.size.height
 
 class FirstWeekFourthlyDemo: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
