@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondWeekOneDemoDetail" customModule="SwiftSelfStudy" customModuleProvider="target">
+            <connections>
+                <outlet property="emailLabel" destination="rMn-F6-PUo" id="Aaj-E7-WvV"/>
+                <outlet property="headImage" destination="Y9A-uK-BJo" id="gdN-UH-hAr"/>
+                <outlet property="mobileLabel" destination="5bv-oN-4fo" id="5ie-3v-wqE"/>
+                <outlet property="nameLabel" destination="smb-kJ-Nix" id="m8i-3e-hTq"/>
+                <outlet property="notesLabel" destination="3c7-10-X8B" id="VH4-1P-Y9V"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y9A-uK-BJo">
+                    <rect key="frame" x="15" y="80" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="4mD-FT-PW2"/>
+                        <constraint firstAttribute="width" constant="80" id="ejx-lo-gxh"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCg-9U-Ycx">
+                    <rect key="frame" x="15" y="180" width="33" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="9H2-Nz-2ty"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.065929137170314789" green="0.61180216073989868" blue="0.97725600004196167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Applessed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smb-kJ-Nix">
+                    <rect key="frame" x="15" y="201" width="117.5" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="aaz-au-n3n"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mobile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLu-zk-mdG">
+                    <rect key="frame" x="15" y="242" width="38" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Joc-ot-MvN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.065929137169999999" green="0.61180216070000004" blue="0.97725600000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Applessed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bv-oN-4fo">
+                    <rect key="frame" x="15" y="263" width="110" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Cue-e8-wmy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5N-hr-sHs">
+                    <rect key="frame" x="15" y="304" width="30.5" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="ICg-v4-yXa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.065929137169999999" green="0.61180216070000004" blue="0.97725600000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Applessed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMn-F6-PUo">
+                    <rect key="frame" x="15" y="325" width="110" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="7gt-g1-jZb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbM-Jx-vDR">
+                    <rect key="frame" x="15" y="366" width="33.5" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="I63-kZ-J7V"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.065929137169999999" green="0.61180216070000004" blue="0.97725600000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Applessed" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3c7-10-X8B">
+                    <rect key="frame" x="15" y="387" width="345" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="l5N-hr-sHs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="0Sr-hJ-VcA"/>
+                <constraint firstItem="3c7-10-X8B" firstAttribute="top" secondItem="qbM-Jx-vDR" secondAttribute="bottom" id="2K2-KI-wZj"/>
+                <constraint firstItem="tCg-9U-Ycx" firstAttribute="top" secondItem="Y9A-uK-BJo" secondAttribute="bottom" constant="20" id="2cl-aN-Fu0"/>
+                <constraint firstItem="3c7-10-X8B" firstAttribute="leading" secondItem="qbM-Jx-vDR" secondAttribute="leading" id="4z5-LT-8JB"/>
+                <constraint firstItem="tCg-9U-Ycx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="51E-iE-haK"/>
+                <constraint firstItem="Y9A-uK-BJo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="5Lg-du-gmb"/>
+                <constraint firstItem="rMn-F6-PUo" firstAttribute="top" secondItem="l5N-hr-sHs" secondAttribute="bottom" id="C6Y-ea-RZu"/>
+                <constraint firstItem="smb-kJ-Nix" firstAttribute="leading" secondItem="tCg-9U-Ycx" secondAttribute="leading" id="F24-z4-XhV"/>
+                <constraint firstItem="rMn-F6-PUo" firstAttribute="leading" secondItem="l5N-hr-sHs" secondAttribute="leading" id="Kfs-yF-W9K"/>
+                <constraint firstItem="Y9A-uK-BJo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="Kta-ae-8UK"/>
+                <constraint firstAttribute="trailing" secondItem="3c7-10-X8B" secondAttribute="trailing" constant="15" id="Rrs-ns-Vnv"/>
+                <constraint firstItem="5bv-oN-4fo" firstAttribute="leading" secondItem="dLu-zk-mdG" secondAttribute="leading" id="U2C-yr-S7k"/>
+                <constraint firstItem="dLu-zk-mdG" firstAttribute="top" secondItem="smb-kJ-Nix" secondAttribute="bottom" constant="20" id="VVs-bW-qCw"/>
+                <constraint firstItem="qbM-Jx-vDR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="Zp2-fc-P13"/>
+                <constraint firstItem="5bv-oN-4fo" firstAttribute="top" secondItem="dLu-zk-mdG" secondAttribute="bottom" id="eFE-ye-zRI"/>
+                <constraint firstItem="qbM-Jx-vDR" firstAttribute="top" secondItem="rMn-F6-PUo" secondAttribute="bottom" constant="20" id="k8L-pr-Sda"/>
+                <constraint firstItem="dLu-zk-mdG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="sHz-Fy-yFP"/>
+                <constraint firstItem="smb-kJ-Nix" firstAttribute="top" secondItem="tCg-9U-Ycx" secondAttribute="bottom" id="wak-I5-my3"/>
+                <constraint firstItem="l5N-hr-sHs" firstAttribute="top" secondItem="5bv-oN-4fo" secondAttribute="bottom" constant="20" id="yr8-72-tL0"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

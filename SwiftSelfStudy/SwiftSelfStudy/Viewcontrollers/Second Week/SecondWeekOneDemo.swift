@@ -20,8 +20,10 @@ class SecondWeekOneDemo: UIViewController,UITableViewDataSource,UITableViewDeleg
         self.navigationItem.title = "Contacts"
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
         let leftItem = UIBarButtonItem.init(image: UIImage.init(named: "setting"), style: .plain, target: self, action: #selector(leftClick))
+        leftItem.tintColor = UIColor.white
         self.navigationItem.setLeftBarButton(leftItem, animated: true)
         let rightItem = UIBarButtonItem.init(image: UIImage.init(named: "add"), style: .plain, target: self, action: #selector(leftClick))
+        rightItem.tintColor = UIColor.white
         self.navigationItem.setRightBarButton(rightItem, animated: true)
     }
     
@@ -87,9 +89,9 @@ class SecondWeekOneDemo: UIViewController,UITableViewDataSource,UITableViewDeleg
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         let arr:NSArray = self.dataArray[indexPath.section] as! NSArray
         let model:SecondWeekOneDemoModel = arr[indexPath.row] as! SecondWeekOneDemoModel
-        cell?.imageView?.image = UIImage.init(named: model.headImage)
-        print(model.headImage)
-        cell?.imageView?.layer.cornerRadius = 22.0
+        let image = UIImage.init(named: model.headImage)
+        cell?.imageView?.image = image
+        cell?.imageView?.layer.cornerRadius = 15.0
         cell?.imageView?.clipsToBounds = true
         cell?.textLabel?.text = model.name
         cell?.accessoryType = .disclosureIndicator
@@ -97,13 +99,28 @@ class SecondWeekOneDemo: UIViewController,UITableViewDataSource,UITableViewDeleg
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: kWidth, height: 44))
-        headView.backgroundColor = UIColor.lightGray
+        let headView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: kWidth, height: 40))
+        headView.backgroundColor = UIColor.init(red: 246/255.0, green: 244/255.0, blue: 244/255.0, alpha: 1.0)
+        let label = UILabel.init(frame: CGRect.init(x: 10, y: 0, width: kWidth-10, height: 40))
+        label.textColor = UIColor.init(red: 123/255.0, green: 73/255.0, blue: 46/255.0, alpha: 1.0)
+        label.font = UIFont.systemFont(ofSize: 15.0)
+        label.text = section % 2 == 0 ? "RECENT":"FRIENDS"
+        headView.addSubview(label)
         return headView
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let arr:NSArray = self.dataArray[indexPath.section] as! NSArray
+        let model:SecondWeekOneDemoModel = arr[indexPath.row] as! SecondWeekOneDemoModel
+        let vc = SecondWeekOneDemoDetail.init(nibName: "SecondWeekOneDemoDetail", bundle: Bundle.main)
+        vc.model = model
+        vc.title = "Info Card"
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 44.0
+        return 40.0
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {

@@ -9,15 +9,20 @@
 import UIKit
 
 class SecondWeekOneDemoModel: NSObject {
-    let headImage = ""
-    let name = ""
-    let mobile = ""
-    let email = ""
-    let notes = ""
+    var headImage = ""
+    var name = ""
+    var mobile = ""
+    var email = ""
+    var notes = ""
     
     init(dict:[String:Any]) {
         super.init()
-        setValuesForKeys(dict)
+//        setValuesForKeys(dict)
+        headImage = dict["headImage"] as! String
+        name = dict["name"] as! String
+        mobile = dict["mobile"] as! String
+        email = dict["email"] as! String
+        notes = dict["notes"] as! String
     }
     
     override func setValue(_ value: Any?, forUndefinedKey key: String) {

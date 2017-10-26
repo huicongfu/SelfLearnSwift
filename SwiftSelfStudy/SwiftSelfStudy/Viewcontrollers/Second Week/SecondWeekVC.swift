@@ -51,8 +51,7 @@ class SecondWeekVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
             self.navigationController?.pushViewController(vc, animated: true)
             break
         case 1:
-            let vc = FirstWeekTwoDemo.init(nibName:"FirstWeekTwoDemo", bundle: Bundle.main)
-            vc.navigationItem.title = dataArray[indexPath.row]
+            let vc = SecondWeekTwoDemo()
             self.navigationController?.pushViewController(vc, animated: true)
             break
         case 2:

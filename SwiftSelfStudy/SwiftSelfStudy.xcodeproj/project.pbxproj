@@ -10,6 +10,9 @@
 		5B9EA15A1F9EC73800AF5CBB /* SecondWeekVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9EA1591F9EC73800AF5CBB /* SecondWeekVC.swift */; };
 		5B9EA15C1F9EDC8400AF5CBB /* FirstWeekFourthlyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9EA15B1F9EDC8400AF5CBB /* FirstWeekFourthlyModel.swift */; };
 		5B9EA15E1F9EE9FB00AF5CBB /* countryData.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B9EA15D1F9EE9FB00AF5CBB /* countryData.json */; };
+		87026C151FA21130005F51E6 /* SecondWeekOneDemoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026C131FA21130005F51E6 /* SecondWeekOneDemoDetail.swift */; };
+		87026C161FA21130005F51E6 /* SecondWeekOneDemoDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87026C141FA21130005F51E6 /* SecondWeekOneDemoDetail.xib */; };
+		87026C181FA21B0C005F51E6 /* SecondWeekTwoDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026C171FA21B0C005F51E6 /* SecondWeekTwoDemo.swift */; };
 		875E17441F9348F600020A3F /* FirstWeekVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875E17431F9348F600020A3F /* FirstWeekVC.swift */; };
 		875E17491F934D0A00020A3F /* FirstWeekOneDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875E17471F934D0A00020A3F /* FirstWeekOneDemo.swift */; };
 		875E174A1F934D0A00020A3F /* FirstWeekOneDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 875E17481F934D0A00020A3F /* FirstWeekOneDemo.xib */; };
@@ -52,6 +55,9 @@
 		5B9EA1591F9EC73800AF5CBB /* SecondWeekVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondWeekVC.swift; sourceTree = "<group>"; };
 		5B9EA15B1F9EDC8400AF5CBB /* FirstWeekFourthlyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstWeekFourthlyModel.swift; sourceTree = "<group>"; };
 		5B9EA15D1F9EE9FB00AF5CBB /* countryData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countryData.json; sourceTree = "<group>"; };
+		87026C131FA21130005F51E6 /* SecondWeekOneDemoDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondWeekOneDemoDetail.swift; sourceTree = "<group>"; };
+		87026C141FA21130005F51E6 /* SecondWeekOneDemoDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondWeekOneDemoDetail.xib; sourceTree = "<group>"; };
+		87026C171FA21B0C005F51E6 /* SecondWeekTwoDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondWeekTwoDemo.swift; sourceTree = "<group>"; };
 		875E17431F9348F600020A3F /* FirstWeekVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstWeekVC.swift; sourceTree = "<group>"; };
 		875E17471F934D0A00020A3F /* FirstWeekOneDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstWeekOneDemo.swift; sourceTree = "<group>"; };
 		875E17481F934D0A00020A3F /* FirstWeekOneDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstWeekOneDemo.xib; sourceTree = "<group>"; };
@@ -111,6 +117,9 @@
 				875E17571F9F71B500020A3F /* SecondWeekOneDemo.swift */,
 				875E17581F9F71B500020A3F /* SecondWeekOneDemo.xib */,
 				875E175B1FA0C59700020A3F /* SecondWeekOneDemoModel.swift */,
+				87026C131FA21130005F51E6 /* SecondWeekOneDemoDetail.swift */,
+				87026C141FA21130005F51E6 /* SecondWeekOneDemoDetail.xib */,
+				87026C171FA21B0C005F51E6 /* SecondWeekTwoDemo.swift */,
 			);
 			path = "Second Week";
 			sourceTree = "<group>";
@@ -309,6 +318,7 @@
 				875E175A1F9F71B500020A3F /* SecondWeekOneDemo.xib in Resources */,
 				87A96CE21F8F967700CAC2B4 /* Main.storyboard in Resources */,
 				5B9EA15E1F9EE9FB00AF5CBB /* countryData.json in Resources */,
+				87026C161FA21130005F51E6 /* SecondWeekOneDemoDetail.xib in Resources */,
 				875E17561F9C7AF100020A3F /* FirstWeekFourthlyDemo.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,12 +348,14 @@
 				875E17491F934D0A00020A3F /* FirstWeekOneDemo.swift in Sources */,
 				875E17441F9348F600020A3F /* FirstWeekVC.swift in Sources */,
 				875E17511F9A33E100020A3F /* FirstWeekThreeDemo.swift in Sources */,
+				87026C181FA21B0C005F51E6 /* SecondWeekTwoDemo.swift in Sources */,
 				87A96CDF1F8F967700CAC2B4 /* ViewController.swift in Sources */,
 				875E17551F9C7AF100020A3F /* FirstWeekFourthlyDemo.swift in Sources */,
 				875E174D1F9665A900020A3F /* FirstWeekTwoDemo.swift in Sources */,
 				875E175C1FA0C59700020A3F /* SecondWeekOneDemoModel.swift in Sources */,
 				5B9EA15A1F9EC73800AF5CBB /* SecondWeekVC.swift in Sources */,
 				87A96CDD1F8F967700CAC2B4 /* AppDelegate.swift in Sources */,
+				87026C151FA21130005F51E6 /* SecondWeekOneDemoDetail.swift in Sources */,
 				875E17591F9F71B500020A3F /* SecondWeekOneDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

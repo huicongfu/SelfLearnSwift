@@ -15,6 +15,11 @@ class FirstWeekVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     let dataArray = ["第一个-Tip Calculator","第二个-Names","第三个","第四个"]
     var tableView = UITableView.init(frame: UIScreen.main.bounds, style: UITableViewStyle.plain)
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.tintColor = UIColor.blue
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
