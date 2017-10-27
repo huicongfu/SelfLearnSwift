@@ -18,24 +18,34 @@ class SecondWeekTwoDemo: UIViewController,UICollectionViewDelegate,UICollectionV
         self.navigationController?.navigationBar.isHidden = true
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.navigationBar.isHidden = false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        self.view.backgroundColor = UIColor.purple
+        self.view.backgroundColor = UIColor.init(colorLiteralRed: 208/255.0, green: 147/255.0, blue: 170/255.0, alpha: 1.0)
         
         self.createUI()
     }
     
     func createUI() {
-        var flowLayout = UICollectionViewFlowLayout.init()
-        flowLayout.itemSize = CGSize.init(width: kWidth-20-15, height: 170)
-        self.collectionView = UICollectionView.init(frame: self.view.bounds, collectionViewLayout: flowLayout)
+        let flowLayout = UICollectionViewFlowLayout.init()
+        flowLayout.scrollDirection = .horizontal
+        flowLayout.itemSize = CGSize.init(width: kWidth-30-30, height: kHeight/1.8)
+        flowLayout.minimumInteritemSpacing = 15
+        flowLayout.minimumLineSpacing = 15
+        flowLayout.sectionInset = UIEdgeInsetsMake(15, 15, 15, 15)
+        self.collectionView = UICollectionView.init(frame: CGRect.init(x: 0, y: 0, width: kWidth, height: kHeight-80), collectionViewLayout: flowLayout)
         self.collectionView?.delegate = self
         self.collectionView?.dataSource = self
         self.view.addSubview(self.collectionView!)
-        self.collectionView?.isDirectionalLockEnabled
-        self.collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        
+        self.collectionView?.register(UINib.init(nibName: "SecondWeekTwoDemoCell", bundle: Bundle.main), forCellWithReuseIdentifier: "cell")
+        self.collectionView?.backgroundColor = UIColor.clear
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -47,8 +57,16 @@ class SecondWeekTwoDemo: UIViewController,UICollectionViewDelegate,UICollectionV
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        var cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        cell.backgroundColor = UIColor.yellow
+        let cell:SecondWeekTwoDemoCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! SecondWeekTwoDemoCell
+        var image = UIImage.init(named: "201.jpg")
+        
+        if indexPath.row % 2 == 0 {
+           image = UIImage.init(named: "201.jpg")
+        }else {
+            image = UIImage.init(named: "202.jpg")
+        }
+        cell.imageView.image = image
+        cell.titleLabel.text = String.init(format: "Hell there,i miss u. %d", indexPath.row)
         return cell
     }
     

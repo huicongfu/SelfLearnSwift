@@ -12,8 +12,13 @@ private let cellId = "cellId"
 
 class SecondWeekVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
-    let dataArray = ["第一个-Contacts","第二个","第三个","第四个"]
+    let dataArray = ["第一个-Contacts","第二个","ToDo List","Swipeable cell"]
     var tableView = UITableView.init(frame: UIScreen.main.bounds, style: UITableViewStyle.plain)
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = false
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,7 +60,12 @@ class SecondWeekVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
             self.navigationController?.pushViewController(vc, animated: true)
             break
         case 2:
-            let vc = FirstWeekThreeDemo.init(nibName:"FirstWeekThreeDemo", bundle: Bundle.main)
+            let vc = SecondWeekThreeDemo()
+            vc.navigationItem.title = dataArray[indexPath.row]
+            self.navigationController?.pushViewController(vc, animated: true)
+            break
+        case 3:
+            let vc = SecondWeekFourthlyDemo()
             vc.navigationItem.title = dataArray[indexPath.row]
             self.navigationController?.pushViewController(vc, animated: true)
             break
