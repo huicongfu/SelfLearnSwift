@@ -8,6 +8,8 @@
 
 import UIKit
 
+let cellId4 = "SecondWeekFourthlyDemo"
+
 class SecondWeekFourthlyDemo: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     var tableView = UITableView.init(frame: UIScreen.main.bounds, style: UITableViewStyle.plain)
@@ -22,7 +24,7 @@ class SecondWeekFourthlyDemo: UIViewController,UITableViewDelegate,UITableViewDa
     func createUI() {
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(UINib.init(nibName: "SecondWeekFourthlyCell", bundle: Bundle.main), forCellReuseIdentifier: cellId4)
         tableView.tableFooterView = UIView()
         self.view.addSubview(tableView)
     }
@@ -36,11 +38,37 @@ class SecondWeekFourthlyDemo: UIViewController,UITableViewDelegate,UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId4, for: indexPath) as! SecondWeekFourthlyCell
+        cell.cellTitleLabel.text = "Pattern \(indexPath.section) Buildding\(indexPath.row)"
         
+        cell.cellImageView.image = indexPath.row % 2 == 0 ? UIImage.init(named: "401") : UIImage.init(named: "402")
         return cell
     }
-
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let delteBtn = UITableViewRowAction.init(style: .default, title: "✖️\ndelete ") { (UITableViewRowAction, IndexPath) in
+            print("delete")
+        }
+        delteBtn.backgroundColor = UIColor.gray
+        
+        
+        let shareBtn = UITableViewRowAction.init(style: .default, title: "🤗\nshare") { (UITableViewRowAction, IndexPath) in
+            print("share")
+            let arr = [UIActivityType.airDrop,UIActivityType.message,UIActivityType.copyToPasteboard,UIActivityType.assignToContact,UIActivityType.postToWeibo,UIActivityType.mail,UIActivityType.saveToCameraRoll]
+            let activity = UIActivityViewController.init(activityItems: arr, applicationActivities: nil)
+            self.navigationController?.present(activity, animated: true, completion: { 
+                
+            })
+        }
+        
+        let downloadBtn = UITableViewRowAction.init(style: .default, title: "⬇️\ndownload") { (UITableViewRowAction, IndexPath) in
+            print("download")
+        }
+        downloadBtn.backgroundColor = UIColor.blue
+        
+        return [downloadBtn,shareBtn,delteBtn]
+        
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
