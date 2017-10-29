@@ -16,9 +16,9 @@ enum ListType:Int {
 }
 
 class SecondWeekThirdDemoModel: NSObject {
-    let titleStr = ""
-    let timeStr = ""
-    let type = ListType.ListTypePeople
+    var titleStr = ""
+    var timeStr = ""
+    var type = ListType.ListTypePeople
     
     
 }
