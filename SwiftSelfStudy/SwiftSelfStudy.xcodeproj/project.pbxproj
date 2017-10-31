@@ -27,6 +27,8 @@
 		87026C151FA21130005F51E6 /* SecondWeekOneDemoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026C131FA21130005F51E6 /* SecondWeekOneDemoDetail.swift */; };
 		87026C161FA21130005F51E6 /* SecondWeekOneDemoDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87026C141FA21130005F51E6 /* SecondWeekOneDemoDetail.xib */; };
 		87026C181FA21B0C005F51E6 /* SecondWeekTwoDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026C171FA21B0C005F51E6 /* SecondWeekTwoDemo.swift */; };
+		87026C1B1FA57B15005F51E6 /* SecondWeekThreeDemoEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026C191FA57B15005F51E6 /* SecondWeekThreeDemoEdit.swift */; };
+		87026C1C1FA57B15005F51E6 /* SecondWeekThreeDemoEdit.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87026C1A1FA57B15005F51E6 /* SecondWeekThreeDemoEdit.xib */; };
 		875E17441F9348F600020A3F /* FirstWeekVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875E17431F9348F600020A3F /* FirstWeekVC.swift */; };
 		875E17491F934D0A00020A3F /* FirstWeekOneDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875E17471F934D0A00020A3F /* FirstWeekOneDemo.swift */; };
 		875E174A1F934D0A00020A3F /* FirstWeekOneDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 875E17481F934D0A00020A3F /* FirstWeekOneDemo.xib */; };
@@ -86,6 +88,8 @@
 		87026C131FA21130005F51E6 /* SecondWeekOneDemoDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondWeekOneDemoDetail.swift; sourceTree = "<group>"; };
 		87026C141FA21130005F51E6 /* SecondWeekOneDemoDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondWeekOneDemoDetail.xib; sourceTree = "<group>"; };
 		87026C171FA21B0C005F51E6 /* SecondWeekTwoDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondWeekTwoDemo.swift; sourceTree = "<group>"; };
+		87026C191FA57B15005F51E6 /* SecondWeekThreeDemoEdit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondWeekThreeDemoEdit.swift; sourceTree = "<group>"; };
+		87026C1A1FA57B15005F51E6 /* SecondWeekThreeDemoEdit.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondWeekThreeDemoEdit.xib; sourceTree = "<group>"; };
 		875E17431F9348F600020A3F /* FirstWeekVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstWeekVC.swift; sourceTree = "<group>"; };
 		875E17471F934D0A00020A3F /* FirstWeekOneDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstWeekOneDemo.swift; sourceTree = "<group>"; };
 		875E17481F934D0A00020A3F /* FirstWeekOneDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstWeekOneDemo.xib; sourceTree = "<group>"; };
@@ -163,6 +167,8 @@
 				5B9135751FA34A85008723D3 /* SecondWeekTwoDemoCell.swift */,
 				5B9135761FA34A85008723D3 /* SecondWeekTwoDemoCell.xib */,
 				5B9135791FA3554B008723D3 /* SecondWeekThreeDemo.swift */,
+				87026C191FA57B15005F51E6 /* SecondWeekThreeDemoEdit.swift */,
+				87026C1A1FA57B15005F51E6 /* SecondWeekThreeDemoEdit.xib */,
 				5B8D25941FA4790700B9A43F /* SecondWeekThreeDemoCell.swift */,
 				5B8D25951FA4790700B9A43F /* SecondWeekThreeDemoCell.xib */,
 				5B8D25981FA4830600B9A43F /* SecondWeekThirdDemoModel.swift */,
@@ -372,6 +378,7 @@
 				87A96CE21F8F967700CAC2B4 /* Main.storyboard in Resources */,
 				5B9EA15E1F9EE9FB00AF5CBB /* countryData.json in Resources */,
 				87026C161FA21130005F51E6 /* SecondWeekOneDemoDetail.xib in Resources */,
+				87026C1C1FA57B15005F51E6 /* SecondWeekThreeDemoEdit.xib in Resources */,
 				875E17561F9C7AF100020A3F /* FirstWeekFourthlyDemo.xib in Resources */,
 				5B8D25971FA4790700B9A43F /* SecondWeekThreeDemoCell.xib in Resources */,
 			);
@@ -421,6 +428,7 @@
 				5B5D01561FA874F50057073D /* ThirdWeekOneFlowLayout.swift in Sources */,
 				87026C151FA21130005F51E6 /* SecondWeekOneDemoDetail.swift in Sources */,
 				875E17591F9F71B500020A3F /* SecondWeekOneDemo.swift in Sources */,
+				87026C1B1FA57B15005F51E6 /* SecondWeekThreeDemoEdit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
