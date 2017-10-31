@@ -19,7 +19,7 @@ class ThirdWeekOneFlowLayout: UICollectionViewFlowLayout {
     override func prepare() {
         super.prepare()
         
-        let itemWH:CGFloat = kWidth / CGFloat(kcellNumberOfOneRow)
+        let itemWH:CGFloat = (kWidth-50) / CGFloat(kcellNumberOfOneRow)
         
         // 设置itemSize
         itemSize = CGSize.init(width: itemWH, height: itemWH)
@@ -30,8 +30,10 @@ class ThirdWeekOneFlowLayout: UICollectionViewFlowLayout {
         // 设置collectionView属性
         collectionView?.isPagingEnabled = true
         collectionView?.showsVerticalScrollIndicator = false
-        collectionView?.showsHorizontalScrollIndicator = false
-        collectionView?.contentInset = UIEdgeInsetsMake(10, 10, 10, 10)
+        collectionView?.showsHorizontalScrollIndicator = true
+        let insertMargin:CGFloat = 10//((collectionView?.bounds.height)! - 2*itemWH) * 0.5
+        
+        collectionView?.contentInset = UIEdgeInsetsMake(insertMargin, insertMargin, insertMargin, insertMargin)
         
         var page = 0
         let itemsCount = collectionView?.numberOfItems(inSection: 0) ?? 0
@@ -42,13 +44,24 @@ class ThirdWeekOneFlowLayout: UICollectionViewFlowLayout {
             
             page = itemIndex / (kcellNumberOfOneRow * kcellRow)
             // 计算得到x,y值
-            let x = itemSize.width * CGFloat(itemIndex % Int(kcellNumberOfOneRow)) + (CGFloat(page) * kWidth)
-            let y = itemSize.height * CGFloat((itemIndex - page * kcellRow * kcellNumberOfOneRow) / kcellNumberOfOneRow)
-            
-            
+            let x = (itemSize.width + insertMargin) * CGFloat(itemIndex % Int(kcellNumberOfOneRow)) + (CGFloat(page) * kWidth)
+            let y = (itemSize.height + insertMargin) * CGFloat((itemIndex - page * kcellRow * kcellNumberOfOneRow) / kcellNumberOfOneRow)
+            attributes.frame = CGRect.init(x: x, y: y, width: itemSize.width, height: itemSize.height)
+            print(attributes.frame)
+            // 把每一个新的属性保存起来
+            attributesArr.append(attributes)
         }
         
-        
+    }
+    // MARK: - 返回当前可见的所有item的Attributes
+    override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
+        var rectAttributes:[UICollectionViewLayoutAttributes] = []
+        _ = attributesArr.map({
+            if rect.contains($0.frame) {
+                rectAttributes.append($0)
+            }
+        })
+        return rectAttributes
     }
     
 }
