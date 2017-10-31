@@ -62,12 +62,17 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             let vc = FirstWeekVC()
             vc.navigationItem.title = dataArray[indexPath.row] as? String
             self.navigationController?.pushViewController(vc , animated: true)
-            break
+//            break
         case 1:
             let vc = SecondWeekVC()
             vc.navigationItem.title = dataArray[indexPath.row] as? String
             self.navigationController?.pushViewController(vc , animated: true)
-            break
+//            break
+        case 2:
+            let vc = ThirdWeekVC()
+            vc.navigationItem.title = dataArray[indexPath.row] as? String
+            self.navigationController?.pushViewController(vc , animated: true)
+//            break
             
         default: break
             

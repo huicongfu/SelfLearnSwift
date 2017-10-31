@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B5D014C1FA7FF7A0057073D /* ThirdWeekVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D014B1FA7FF7A0057073D /* ThirdWeekVC.swift */; };
+		5B5D014E1FA80D270057073D /* ThirdWeekOneDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D014D1FA80D270057073D /* ThirdWeekOneDemo.swift */; };
+		5B5D01531FA82A440057073D /* ThirdWeekOneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D01511FA82A440057073D /* ThirdWeekOneCell.swift */; };
+		5B5D01541FA82A440057073D /* ThirdWeekOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B5D01521FA82A440057073D /* ThirdWeekOneCell.xib */; };
+		5B5D01561FA874F50057073D /* ThirdWeekOneFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D01551FA874F50057073D /* ThirdWeekOneFlowLayout.swift */; };
 		5B8D25821FA4581F00B9A43F /* SecondWeekFourthlyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D25801FA4581F00B9A43F /* SecondWeekFourthlyCell.swift */; };
 		5B8D25831FA4581F00B9A43F /* SecondWeekFourthlyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B8D25811FA4581F00B9A43F /* SecondWeekFourthlyCell.xib */; };
 		5B8D25961FA4790700B9A43F /* SecondWeekThreeDemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D25941FA4790700B9A43F /* SecondWeekThreeDemoCell.swift */; };
@@ -61,6 +66,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B5D014B1FA7FF7A0057073D /* ThirdWeekVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdWeekVC.swift; sourceTree = "<group>"; };
+		5B5D014D1FA80D270057073D /* ThirdWeekOneDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdWeekOneDemo.swift; sourceTree = "<group>"; };
+		5B5D01511FA82A440057073D /* ThirdWeekOneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdWeekOneCell.swift; sourceTree = "<group>"; };
+		5B5D01521FA82A440057073D /* ThirdWeekOneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdWeekOneCell.xib; sourceTree = "<group>"; };
+		5B5D01551FA874F50057073D /* ThirdWeekOneFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdWeekOneFlowLayout.swift; sourceTree = "<group>"; };
 		5B8D25801FA4581F00B9A43F /* SecondWeekFourthlyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondWeekFourthlyCell.swift; sourceTree = "<group>"; };
 		5B8D25811FA4581F00B9A43F /* SecondWeekFourthlyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondWeekFourthlyCell.xib; sourceTree = "<group>"; };
 		5B8D25941FA4790700B9A43F /* SecondWeekThreeDemoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondWeekThreeDemoCell.swift; sourceTree = "<group>"; };
@@ -128,6 +138,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B5D014A1FA7FDD90057073D /* Third Week */ = {
+			isa = PBXGroup;
+			children = (
+				5B5D014B1FA7FF7A0057073D /* ThirdWeekVC.swift */,
+				5B5D014D1FA80D270057073D /* ThirdWeekOneDemo.swift */,
+				5B5D01511FA82A440057073D /* ThirdWeekOneCell.swift */,
+				5B5D01551FA874F50057073D /* ThirdWeekOneFlowLayout.swift */,
+				5B5D01521FA82A440057073D /* ThirdWeekOneCell.xib */,
+			);
+			path = "Third Week";
+			sourceTree = "<group>";
+		};
 		5B9EA1581F9EC66A00AF5CBB /* Second Week */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +176,7 @@
 		875E173F1F9343CD00020A3F /* Viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
+				5B5D014A1FA7FDD90057073D /* Third Week */,
 				5B9EA1581F9EC66A00AF5CBB /* Second Week */,
 				875E17401F93442B00020A3F /* First Week */,
 			);
@@ -339,6 +362,7 @@
 			files = (
 				5B9135781FA34A85008723D3 /* SecondWeekTwoDemoCell.xib in Resources */,
 				875E174A1F934D0A00020A3F /* FirstWeekOneDemo.xib in Resources */,
+				5B5D01541FA82A440057073D /* ThirdWeekOneCell.xib in Resources */,
 				87A96CE71F8F967700CAC2B4 /* LaunchScreen.storyboard in Resources */,
 				87A96CE41F8F967700CAC2B4 /* Assets.xcassets in Resources */,
 				5B8D25831FA4581F00B9A43F /* SecondWeekFourthlyCell.xib in Resources */,
@@ -374,6 +398,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B5D014E1FA80D270057073D /* ThirdWeekOneDemo.swift in Sources */,
 				5B9EA15C1F9EDC8400AF5CBB /* FirstWeekFourthlyModel.swift in Sources */,
 				5B91357C1FA35591008723D3 /* SecondWeekFourthlyDemo.swift in Sources */,
 				875E17491F934D0A00020A3F /* FirstWeekOneDemo.swift in Sources */,
@@ -383,6 +408,7 @@
 				87026C181FA21B0C005F51E6 /* SecondWeekTwoDemo.swift in Sources */,
 				87A96CDF1F8F967700CAC2B4 /* ViewController.swift in Sources */,
 				875E17551F9C7AF100020A3F /* FirstWeekFourthlyDemo.swift in Sources */,
+				5B5D01531FA82A440057073D /* ThirdWeekOneCell.swift in Sources */,
 				5B8D25961FA4790700B9A43F /* SecondWeekThreeDemoCell.swift in Sources */,
 				875E174D1F9665A900020A3F /* FirstWeekTwoDemo.swift in Sources */,
 				875E175C1FA0C59700020A3F /* SecondWeekOneDemoModel.swift in Sources */,
@@ -390,7 +416,9 @@
 				5B9EA15A1F9EC73800AF5CBB /* SecondWeekVC.swift in Sources */,
 				5B8D25991FA4830600B9A43F /* SecondWeekThirdDemoModel.swift in Sources */,
 				87A96CDD1F8F967700CAC2B4 /* AppDelegate.swift in Sources */,
+				5B5D014C1FA7FF7A0057073D /* ThirdWeekVC.swift in Sources */,
 				5B91357A1FA3554B008723D3 /* SecondWeekThreeDemo.swift in Sources */,
+				5B5D01561FA874F50057073D /* ThirdWeekOneFlowLayout.swift in Sources */,
 				87026C151FA21130005F51E6 /* SecondWeekOneDemoDetail.swift in Sources */,
 				875E17591F9F71B500020A3F /* SecondWeekOneDemo.swift in Sources */,
 			);
