@@ -55,7 +55,7 @@ class ThirdWeekOneFlowLayout: UICollectionViewFlowLayout {
     }
     // MARK: - 返回当前可见的所有item的Attributes
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
-        var rectAttributes:[UICollectionViewLayoutAttributes] = []
+        var rectAttributes: [UICollectionViewLayoutAttributes] = []
         _ = attributesArr.map({
             if rect.contains($0.frame) {
                 rectAttributes.append($0)

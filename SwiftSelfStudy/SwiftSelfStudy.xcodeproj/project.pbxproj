@@ -29,6 +29,9 @@
 		87026C181FA21B0C005F51E6 /* SecondWeekTwoDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026C171FA21B0C005F51E6 /* SecondWeekTwoDemo.swift */; };
 		87026C1B1FA57B15005F51E6 /* SecondWeekThreeDemoEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026C191FA57B15005F51E6 /* SecondWeekThreeDemoEdit.swift */; };
 		87026C1C1FA57B15005F51E6 /* SecondWeekThreeDemoEdit.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87026C1A1FA57B15005F51E6 /* SecondWeekThreeDemoEdit.xib */; };
+		87026C1E1FA8C7FE005F51E6 /* ThirdWeekTwoDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026C1D1FA8C7FE005F51E6 /* ThirdWeekTwoDemo.swift */; };
+		87026C211FA8C901005F51E6 /* ThirdWeekTwoDemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026C1F1FA8C901005F51E6 /* ThirdWeekTwoDemoCell.swift */; };
+		87026C221FA8C901005F51E6 /* ThirdWeekTwoDemoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87026C201FA8C901005F51E6 /* ThirdWeekTwoDemoCell.xib */; };
 		875E17441F9348F600020A3F /* FirstWeekVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875E17431F9348F600020A3F /* FirstWeekVC.swift */; };
 		875E17491F934D0A00020A3F /* FirstWeekOneDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875E17471F934D0A00020A3F /* FirstWeekOneDemo.swift */; };
 		875E174A1F934D0A00020A3F /* FirstWeekOneDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 875E17481F934D0A00020A3F /* FirstWeekOneDemo.xib */; };
@@ -90,6 +93,9 @@
 		87026C171FA21B0C005F51E6 /* SecondWeekTwoDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondWeekTwoDemo.swift; sourceTree = "<group>"; };
 		87026C191FA57B15005F51E6 /* SecondWeekThreeDemoEdit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondWeekThreeDemoEdit.swift; sourceTree = "<group>"; };
 		87026C1A1FA57B15005F51E6 /* SecondWeekThreeDemoEdit.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondWeekThreeDemoEdit.xib; sourceTree = "<group>"; };
+		87026C1D1FA8C7FE005F51E6 /* ThirdWeekTwoDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdWeekTwoDemo.swift; sourceTree = "<group>"; };
+		87026C1F1FA8C901005F51E6 /* ThirdWeekTwoDemoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdWeekTwoDemoCell.swift; sourceTree = "<group>"; };
+		87026C201FA8C901005F51E6 /* ThirdWeekTwoDemoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdWeekTwoDemoCell.xib; sourceTree = "<group>"; };
 		875E17431F9348F600020A3F /* FirstWeekVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstWeekVC.swift; sourceTree = "<group>"; };
 		875E17471F934D0A00020A3F /* FirstWeekOneDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstWeekOneDemo.swift; sourceTree = "<group>"; };
 		875E17481F934D0A00020A3F /* FirstWeekOneDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstWeekOneDemo.xib; sourceTree = "<group>"; };
@@ -150,6 +156,9 @@
 				5B5D01511FA82A440057073D /* ThirdWeekOneCell.swift */,
 				5B5D01551FA874F50057073D /* ThirdWeekOneFlowLayout.swift */,
 				5B5D01521FA82A440057073D /* ThirdWeekOneCell.xib */,
+				87026C1D1FA8C7FE005F51E6 /* ThirdWeekTwoDemo.swift */,
+				87026C1F1FA8C901005F51E6 /* ThirdWeekTwoDemoCell.swift */,
+				87026C201FA8C901005F51E6 /* ThirdWeekTwoDemoCell.xib */,
 			);
 			path = "Third Week";
 			sourceTree = "<group>";
@@ -381,6 +390,7 @@
 				87026C1C1FA57B15005F51E6 /* SecondWeekThreeDemoEdit.xib in Resources */,
 				875E17561F9C7AF100020A3F /* FirstWeekFourthlyDemo.xib in Resources */,
 				5B8D25971FA4790700B9A43F /* SecondWeekThreeDemoCell.xib in Resources */,
+				87026C221FA8C901005F51E6 /* ThirdWeekTwoDemoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +427,7 @@
 				875E17551F9C7AF100020A3F /* FirstWeekFourthlyDemo.swift in Sources */,
 				5B5D01531FA82A440057073D /* ThirdWeekOneCell.swift in Sources */,
 				5B8D25961FA4790700B9A43F /* SecondWeekThreeDemoCell.swift in Sources */,
+				87026C1E1FA8C7FE005F51E6 /* ThirdWeekTwoDemo.swift in Sources */,
 				875E174D1F9665A900020A3F /* FirstWeekTwoDemo.swift in Sources */,
 				875E175C1FA0C59700020A3F /* SecondWeekOneDemoModel.swift in Sources */,
 				5B8D25821FA4581F00B9A43F /* SecondWeekFourthlyCell.swift in Sources */,
@@ -425,6 +436,7 @@
 				87A96CDD1F8F967700CAC2B4 /* AppDelegate.swift in Sources */,
 				5B5D014C1FA7FF7A0057073D /* ThirdWeekVC.swift in Sources */,
 				5B91357A1FA3554B008723D3 /* SecondWeekThreeDemo.swift in Sources */,
+				87026C211FA8C901005F51E6 /* ThirdWeekTwoDemoCell.swift in Sources */,
 				5B5D01561FA874F50057073D /* ThirdWeekOneFlowLayout.swift in Sources */,
 				87026C151FA21130005F51E6 /* SecondWeekOneDemoDetail.swift in Sources */,
 				875E17591F9F71B500020A3F /* SecondWeekOneDemo.swift in Sources */,

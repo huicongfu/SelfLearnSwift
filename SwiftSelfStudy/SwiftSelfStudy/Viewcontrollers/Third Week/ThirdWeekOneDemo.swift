@@ -29,6 +29,7 @@ class ThirdWeekOneDemo: UIViewController,UICollectionViewDelegate,UICollectionVi
         self.view.addSubview(self.contentView)
         
         let flowLayout = ThirdWeekOneFlowLayout.init()
+        
 //        flowLayout.scrollDirection = .horizontal
         let cellW = (kWidth-50) / CGFloat(kcellNumberOfOneRow)
 //        flowLayout.itemSize = CGSize.init(width: cellW, height: cellW)
@@ -42,6 +43,7 @@ class ThirdWeekOneDemo: UIViewController,UICollectionViewDelegate,UICollectionVi
         self.view.addSubview(self.collectionView!)
         self.collectionView?.backgroundColor = UIColor.init(colorLiteralRed: 224/255.0, green: 250/255.0, blue: 229/255.0, alpha: 1.0)
         self.collectionView?.register(UINib.init(nibName: "ThirdWeekOneCell", bundle: Bundle.main), forCellWithReuseIdentifier: "cell")
+//        self.collectionView?.contentInset = UIEdgeInsetsMake(0, 0, 0, kWidth/1.5)
         
         self.pageController.frame = CGRect.init(x: kWidth/2.0 - 50, y: (self.collectionView?.frame.origin.y)! + (self.collectionView?.frame.size.height)! + 10, width: 100, height: 20)
         self.pageController.numberOfPages = 2;
