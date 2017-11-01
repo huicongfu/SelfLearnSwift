@@ -24,19 +24,14 @@ class ThirdWeekOneDemo: UIViewController,UICollectionViewDelegate,UICollectionVi
     
     func createUI() {
         
-//        self.contentView.frame = CGRect.init(x: 0, y: 120, width: kWidth, height: 220)
-//        self.contentView.backgroundColor = UIColor.init(colorLiteralRed: 224/255.0, green: 250/255.0, blue: 229/255.0, alpha: 1.0)
+
         self.view.addSubview(self.contentView)
         
         let flowLayout = ThirdWeekOneFlowLayout.init()
         
-//        flowLayout.scrollDirection = .horizontal
         let cellW = (kWidth-50) / CGFloat(kcellNumberOfOneRow)
-//        flowLayout.itemSize = CGSize.init(width: cellW, height: cellW)
-//        flowLayout.minimumLineSpacing = 10;
-//        flowLayout.minimumInteritemSpacing = 10
-//        flowLayout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10)
-        self.collectionView = UICollectionView.init(frame: CGRect.init(x: 0, y: 100, width: kWidth, height:cellW*2+40), collectionViewLayout: flowLayout)
+
+        self.collectionView = UICollectionView.init(frame: CGRect.init(x: 0, y: 100, width: kWidth, height:cellW*2+30), collectionViewLayout: flowLayout)
         self.collectionView?.delegate = self
         self.collectionView?.dataSource = self
         self.collectionView?.isPagingEnabled = true;
@@ -50,7 +45,14 @@ class ThirdWeekOneDemo: UIViewController,UICollectionViewDelegate,UICollectionVi
         self.pageController.currentPage = 0;
         self.pageController.currentPageIndicatorTintColor = UIColor.black
         self.pageController.pageIndicatorTintColor = UIColor.gray
+        self.pageController.addTarget(self, action: #selector(valueChange), for: .valueChanged)
         self.view.addSubview(self.pageController)
+    }
+    
+    func valueChange() {
+//        let page:CGFloat = CGFloat(self.pageController.currentPage)
+//        print(page)
+//        self.collectionView?.setContentOffset(CGPoint.init(x: (kWidth * page), y: 10), animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -66,8 +68,6 @@ class ThirdWeekOneDemo: UIViewController,UICollectionViewDelegate,UICollectionVi
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let page:Int = Int(scrollView.contentOffset.x/kWidth)
         self.pageController.currentPage = page
-        
-        
     }
 
     override func didReceiveMemoryWarning() {

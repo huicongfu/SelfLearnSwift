@@ -30,10 +30,10 @@ class ThirdWeekOneFlowLayout: UICollectionViewFlowLayout {
         // 设置collectionView属性
         collectionView?.isPagingEnabled = true
         collectionView?.showsVerticalScrollIndicator = false
-        collectionView?.showsHorizontalScrollIndicator = true
+        collectionView?.showsHorizontalScrollIndicator = false
         let insertMargin:CGFloat = 10//((collectionView?.bounds.height)! - 2*itemWH) * 0.5
         
-        collectionView?.contentInset = UIEdgeInsetsMake(insertMargin, insertMargin, insertMargin, insertMargin)
+        collectionView?.contentInset = UIEdgeInsetsMake(insertMargin, 0, insertMargin, 0)
         
         var page = 0
         let itemsCount = collectionView?.numberOfItems(inSection: 0) ?? 0
@@ -46,13 +46,22 @@ class ThirdWeekOneFlowLayout: UICollectionViewFlowLayout {
             // 计算得到x,y值
             let x = (itemSize.width + insertMargin) * CGFloat(itemIndex % Int(kcellNumberOfOneRow)) + (CGFloat(page) * kWidth)
             let y = (itemSize.height + insertMargin) * CGFloat((itemIndex - page * kcellRow * kcellNumberOfOneRow) / kcellNumberOfOneRow)
-            attributes.frame = CGRect.init(x: x, y: y, width: itemSize.width, height: itemSize.height)
-            print(attributes.frame)
+            attributes.frame = CGRect.init(x: x+10, y: y, width: itemSize.width, height: itemSize.height)
+//            print(attributes.frame)
             // 把每一个新的属性保存起来
             attributesArr.append(attributes)
         }
         
     }
+    
+    override var collectionViewContentSize: CGSize {
+        let size:CGSize = super.collectionViewContentSize
+        let collectionViewWidth:CGFloat = (self.collectionView?.frame.size.width)!
+        let nbOfScreen:Int = Int(ceil(size.width/collectionViewWidth))
+        let newSize = CGSize.init(width: collectionViewWidth*CGFloat(nbOfScreen), height: size.height)
+        return newSize
+    }
+    
     // MARK: - 返回当前可见的所有item的Attributes
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         var rectAttributes: [UICollectionViewLayoutAttributes] = []
