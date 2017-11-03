@@ -11,11 +11,26 @@ import UIKit
 class ThirdWeekThreeDemo: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate,ThirdWeekWaterFallLayoutDataSource {
     
     var collectionView:UICollectionView?
-    var dataArray = ["3_1","3_2","3_3","3_4","3_5","3_1","3_2","3_3","3_4","3_5"]
+    var dataArray:NSMutableArray?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.createUI()
+        self.downloadData()
+    }
+    
+    func downloadData() {
+        let array = ["3_1","3_2","3_3","3_4","3_5","3_1","3_2","3_3","3_4","3_5","3_3","3_4","3_5","3_1","3_2"]
+        self.dataArray = NSMutableArray.init()
+        for index in 0..<array.count {
+            let model = ThirdWeekThreeDemoModel.init()
+            let height:CGFloat = CGFloat(arc4random_uniform(300) + 100)
+            model.headImage = array[index]
+            model.imageHeight = height
+            model.isSelected = false
+            self.dataArray?.add(model)
+        }
+        self.collectionView?.reloadData()
     }
     
     func createUI() {
@@ -36,12 +51,16 @@ class ThirdWeekThreeDemo: UIViewController,UICollectionViewDataSource,UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return dataArray.count
+        return dataArray!.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell:ThirdWeekThreeDemoCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ThirdWeekThreeDemoCell
-        cell.cellImageView.image = UIImage.init(named: self.dataArray[indexPath.row])
+        let model:ThirdWeekThreeDemoModel = self.dataArray?[indexPath.row] as! ThirdWeekThreeDemoModel
+        cell.cellImageView.image = UIImage.init(named: model.headImage)
+        cell.loveBtn.tag = 500 + indexPath.row
+        cell.loveBtn.addTarget(self, action: #selector(loveBtnClicked(btn:)), for: .touchUpInside)
+        cell.loveBtn.isSelected = model.isSelected
         return cell
     }
     
@@ -50,9 +69,16 @@ class ThirdWeekThreeDemo: UIViewController,UICollectionViewDataSource,UICollecti
     }
     
     func itemHeight(_waterFallLayout: ThirdWeekThreeWaterFallLayout, item: Int) -> CGFloat {
-        let height:CGFloat = CGFloat(arc4random_uniform(300) + 100)
-        print(height)
-        return height
+        let model:ThirdWeekThreeDemoModel = self.dataArray?[item] as! ThirdWeekThreeDemoModel
+        return model.imageHeight
+    }
+    
+    func loveBtnClicked(btn:UIButton) {
+        let row = btn.tag - 500;
+        
+        btn.isSelected = !btn.isSelected
+        let model:ThirdWeekThreeDemoModel = self.dataArray?[row] as! ThirdWeekThreeDemoModel
+        model.isSelected = btn.isSelected
     }
 
     override func didReceiveMemoryWarning() {

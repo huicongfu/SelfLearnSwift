@@ -11,4 +11,6 @@ import UIKit
 class ThirdWeekThreeDemoModel: NSObject {
     var headImage = ""
     var isSelected = false
+    var imageHeight:CGFloat = 0.0
+    
 }

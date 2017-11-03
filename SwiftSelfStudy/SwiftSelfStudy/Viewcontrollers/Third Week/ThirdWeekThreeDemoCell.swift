@@ -19,7 +19,7 @@ class ThirdWeekThreeDemoCell: UICollectionViewCell {
         cellImageView.layer.cornerRadius = 5.0
         cellImageView.clipsToBounds = true
         
-        headImageView.layer.cornerRadius = 13.0
+        headImageView.layer.cornerRadius = 15.0
         headImageView.clipsToBounds = true
     }
 

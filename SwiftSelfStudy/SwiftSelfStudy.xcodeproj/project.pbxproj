@@ -37,6 +37,11 @@
 		87026C271FAA0241005F51E6 /* ThirdWeekThreeDemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026C251FAA0241005F51E6 /* ThirdWeekThreeDemoCell.swift */; };
 		87026C281FAA0241005F51E6 /* ThirdWeekThreeDemoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87026C261FAA0241005F51E6 /* ThirdWeekThreeDemoCell.xib */; };
 		87026C2A1FAA02F9005F51E6 /* ThirdWeekThreeWaterFallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026C291FAA02F9005F51E6 /* ThirdWeekThreeWaterFallLayout.swift */; };
+		87026C2C1FACA5C6005F51E6 /* ThirdWeekFourthlyDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026C2B1FACA5C5005F51E6 /* ThirdWeekFourthlyDemo.swift */; };
+		87026C2F1FACBED0005F51E6 /* ThirdWeekFourthlyDemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026C2D1FACBED0005F51E6 /* ThirdWeekFourthlyDemoCell.swift */; };
+		87026C301FACBED0005F51E6 /* ThirdWeekFourthlyDemoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87026C2E1FACBED0005F51E6 /* ThirdWeekFourthlyDemoCell.xib */; };
+		87026C331FACC631005F51E6 /* ThirdWeekFourthlyDemoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026C311FACC631005F51E6 /* ThirdWeekFourthlyDemoTableCell.swift */; };
+		87026C341FACC631005F51E6 /* ThirdWeekFourthlyDemoTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87026C321FACC631005F51E6 /* ThirdWeekFourthlyDemoTableCell.xib */; };
 		875E17441F9348F600020A3F /* FirstWeekVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875E17431F9348F600020A3F /* FirstWeekVC.swift */; };
 		875E17491F934D0A00020A3F /* FirstWeekOneDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875E17471F934D0A00020A3F /* FirstWeekOneDemo.swift */; };
 		875E174A1F934D0A00020A3F /* FirstWeekOneDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 875E17481F934D0A00020A3F /* FirstWeekOneDemo.xib */; };
@@ -106,6 +111,11 @@
 		87026C251FAA0241005F51E6 /* ThirdWeekThreeDemoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdWeekThreeDemoCell.swift; sourceTree = "<group>"; };
 		87026C261FAA0241005F51E6 /* ThirdWeekThreeDemoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdWeekThreeDemoCell.xib; sourceTree = "<group>"; };
 		87026C291FAA02F9005F51E6 /* ThirdWeekThreeWaterFallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdWeekThreeWaterFallLayout.swift; sourceTree = "<group>"; };
+		87026C2B1FACA5C5005F51E6 /* ThirdWeekFourthlyDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdWeekFourthlyDemo.swift; sourceTree = "<group>"; };
+		87026C2D1FACBED0005F51E6 /* ThirdWeekFourthlyDemoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdWeekFourthlyDemoCell.swift; sourceTree = "<group>"; };
+		87026C2E1FACBED0005F51E6 /* ThirdWeekFourthlyDemoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdWeekFourthlyDemoCell.xib; sourceTree = "<group>"; };
+		87026C311FACC631005F51E6 /* ThirdWeekFourthlyDemoTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdWeekFourthlyDemoTableCell.swift; sourceTree = "<group>"; };
+		87026C321FACC631005F51E6 /* ThirdWeekFourthlyDemoTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdWeekFourthlyDemoTableCell.xib; sourceTree = "<group>"; };
 		875E17431F9348F600020A3F /* FirstWeekVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstWeekVC.swift; sourceTree = "<group>"; };
 		875E17471F934D0A00020A3F /* FirstWeekOneDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstWeekOneDemo.swift; sourceTree = "<group>"; };
 		875E17481F934D0A00020A3F /* FirstWeekOneDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstWeekOneDemo.xib; sourceTree = "<group>"; };
@@ -174,6 +184,11 @@
 				87026C251FAA0241005F51E6 /* ThirdWeekThreeDemoCell.swift */,
 				87026C261FAA0241005F51E6 /* ThirdWeekThreeDemoCell.xib */,
 				87026C291FAA02F9005F51E6 /* ThirdWeekThreeWaterFallLayout.swift */,
+				87026C2B1FACA5C5005F51E6 /* ThirdWeekFourthlyDemo.swift */,
+				87026C311FACC631005F51E6 /* ThirdWeekFourthlyDemoTableCell.swift */,
+				87026C321FACC631005F51E6 /* ThirdWeekFourthlyDemoTableCell.xib */,
+				87026C2D1FACBED0005F51E6 /* ThirdWeekFourthlyDemoCell.swift */,
+				87026C2E1FACBED0005F51E6 /* ThirdWeekFourthlyDemoCell.xib */,
 			);
 			path = "Third Week";
 			sourceTree = "<group>";
@@ -397,6 +412,7 @@
 				87A96CE41F8F967700CAC2B4 /* Assets.xcassets in Resources */,
 				5B8D25831FA4581F00B9A43F /* SecondWeekFourthlyCell.xib in Resources */,
 				875E174E1F9665A900020A3F /* FirstWeekTwoDemo.xib in Resources */,
+				87026C341FACC631005F51E6 /* ThirdWeekFourthlyDemoTableCell.xib in Resources */,
 				875E17521F9A33E100020A3F /* FirstWeekThreeDemo.xib in Resources */,
 				875E175A1F9F71B500020A3F /* SecondWeekOneDemo.xib in Resources */,
 				87A96CE21F8F967700CAC2B4 /* Main.storyboard in Resources */,
@@ -407,6 +423,7 @@
 				875E17561F9C7AF100020A3F /* FirstWeekFourthlyDemo.xib in Resources */,
 				5B8D25971FA4790700B9A43F /* SecondWeekThreeDemoCell.xib in Resources */,
 				87026C221FA8C901005F51E6 /* ThirdWeekTwoDemoCell.xib in Resources */,
+				87026C301FACBED0005F51E6 /* ThirdWeekFourthlyDemoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +451,7 @@
 				5B5D014E1FA80D270057073D /* ThirdWeekOneDemo.swift in Sources */,
 				5B9EA15C1F9EDC8400AF5CBB /* FirstWeekFourthlyModel.swift in Sources */,
 				5B91357C1FA35591008723D3 /* SecondWeekFourthlyDemo.swift in Sources */,
+				87026C2F1FACBED0005F51E6 /* ThirdWeekFourthlyDemoCell.swift in Sources */,
 				875E17491F934D0A00020A3F /* FirstWeekOneDemo.swift in Sources */,
 				875E17441F9348F600020A3F /* FirstWeekVC.swift in Sources */,
 				5B9135771FA34A85008723D3 /* SecondWeekTwoDemoCell.swift in Sources */,
@@ -446,12 +464,14 @@
 				87026C1E1FA8C7FE005F51E6 /* ThirdWeekTwoDemo.swift in Sources */,
 				875E174D1F9665A900020A3F /* FirstWeekTwoDemo.swift in Sources */,
 				875E175C1FA0C59700020A3F /* SecondWeekOneDemoModel.swift in Sources */,
+				87026C331FACC631005F51E6 /* ThirdWeekFourthlyDemoTableCell.swift in Sources */,
 				87026C271FAA0241005F51E6 /* ThirdWeekThreeDemoCell.swift in Sources */,
 				5B8D25821FA4581F00B9A43F /* SecondWeekFourthlyCell.swift in Sources */,
 				5B9EA15A1F9EC73800AF5CBB /* SecondWeekVC.swift in Sources */,
 				5B8D25991FA4830600B9A43F /* SecondWeekThirdDemoModel.swift in Sources */,
 				5B1B48321FAB478B00F669AB /* ThirdWeekThreeDemoModel.swift in Sources */,
 				87A96CDD1F8F967700CAC2B4 /* AppDelegate.swift in Sources */,
+				87026C2C1FACA5C6005F51E6 /* ThirdWeekFourthlyDemo.swift in Sources */,
 				5B5D014C1FA7FF7A0057073D /* ThirdWeekVC.swift in Sources */,
 				5B91357A1FA3554B008723D3 /* SecondWeekThreeDemo.swift in Sources */,
 				87026C2A1FAA02F9005F51E6 /* ThirdWeekThreeWaterFallLayout.swift in Sources */,
