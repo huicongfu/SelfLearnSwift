@@ -50,7 +50,9 @@ class ThirdWeekThreeDemo: UIViewController,UICollectionViewDataSource,UICollecti
     }
     
     func itemHeight(_waterFallLayout: ThirdWeekThreeWaterFallLayout, item: Int) -> CGFloat {
-        return CGFloat(arc4random_uniform(300) + 100)
+        let height:CGFloat = CGFloat(arc4random_uniform(300) + 100)
+        print(height)
+        return height
     }
 
     override func didReceiveMemoryWarning() {

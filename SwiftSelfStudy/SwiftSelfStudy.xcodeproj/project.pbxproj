@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B1B48321FAB478B00F669AB /* ThirdWeekThreeDemoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1B48311FAB478B00F669AB /* ThirdWeekThreeDemoModel.swift */; };
 		5B5D014C1FA7FF7A0057073D /* ThirdWeekVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D014B1FA7FF7A0057073D /* ThirdWeekVC.swift */; };
 		5B5D014E1FA80D270057073D /* ThirdWeekOneDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D014D1FA80D270057073D /* ThirdWeekOneDemo.swift */; };
 		5B5D01531FA82A440057073D /* ThirdWeekOneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D01511FA82A440057073D /* ThirdWeekOneCell.swift */; };
@@ -75,6 +76,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B1B48311FAB478B00F669AB /* ThirdWeekThreeDemoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdWeekThreeDemoModel.swift; sourceTree = "<group>"; };
 		5B5D014B1FA7FF7A0057073D /* ThirdWeekVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdWeekVC.swift; sourceTree = "<group>"; };
 		5B5D014D1FA80D270057073D /* ThirdWeekOneDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdWeekOneDemo.swift; sourceTree = "<group>"; };
 		5B5D01511FA82A440057073D /* ThirdWeekOneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdWeekOneCell.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				87026C1F1FA8C901005F51E6 /* ThirdWeekTwoDemoCell.swift */,
 				87026C201FA8C901005F51E6 /* ThirdWeekTwoDemoCell.xib */,
 				87026C231FA9FFCA005F51E6 /* ThirdWeekThreeDemo.swift */,
+				5B1B48311FAB478B00F669AB /* ThirdWeekThreeDemoModel.swift */,
 				87026C251FAA0241005F51E6 /* ThirdWeekThreeDemoCell.swift */,
 				87026C261FAA0241005F51E6 /* ThirdWeekThreeDemoCell.xib */,
 				87026C291FAA02F9005F51E6 /* ThirdWeekThreeWaterFallLayout.swift */,
@@ -447,6 +450,7 @@
 				5B8D25821FA4581F00B9A43F /* SecondWeekFourthlyCell.swift in Sources */,
 				5B9EA15A1F9EC73800AF5CBB /* SecondWeekVC.swift in Sources */,
 				5B8D25991FA4830600B9A43F /* SecondWeekThirdDemoModel.swift in Sources */,
+				5B1B48321FAB478B00F669AB /* ThirdWeekThreeDemoModel.swift in Sources */,
 				87A96CDD1F8F967700CAC2B4 /* AppDelegate.swift in Sources */,
 				5B5D014C1FA7FF7A0057073D /* ThirdWeekVC.swift in Sources */,
 				5B91357A1FA3554B008723D3 /* SecondWeekThreeDemo.swift in Sources */,

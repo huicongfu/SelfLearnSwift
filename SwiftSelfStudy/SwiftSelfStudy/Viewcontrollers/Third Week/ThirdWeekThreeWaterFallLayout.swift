@@ -46,6 +46,7 @@ extension ThirdWeekThreeWaterFallLayout {
                 fatalError("请遵守数据源实现对应方法返回cell高度")
             }
             attributes.frame = CGRect(x: X, y: Y, width: width, height: height)
+            print(attributes.frame)
             cellAttributes.append(attributes)
             totalHeight[minIndex] = minH + minimumLineSpacing + height
         }
