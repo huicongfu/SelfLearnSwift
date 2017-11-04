@@ -15,6 +15,11 @@ class ThirdWeekFourthlyDemoTableCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        selectedBGView = UIImageView.init(frame: CGRect.init(x: 0, y: 0, width: 4, height: self.frame.size.height))
+        selectedBGView.backgroundColor = .red
+        self.selectedBackgroundView = UIView.init(frame: CGRect.init(x: 5, y: 0, width: self.frame.size.width-5, height: self.frame.size.height))
+        self.selectedBackgroundView?.addSubview(selectedBGView)
+        self.selectedBackgroundView?.backgroundColor = UIColor.lightGray
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

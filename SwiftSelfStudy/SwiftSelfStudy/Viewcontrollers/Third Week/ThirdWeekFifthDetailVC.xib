@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThirdWeekFifthDetailVC" customModule="SwiftSelfStudy" customModuleProvider="target">
+            <connections>
+                <outlet property="headImageView" destination="7KO-Ec-lyh" id="j1D-4l-YMJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7KO-Ec-lyh">
+                    <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="4Au-YH-H4s"/>
+                        <constraint firstAttribute="width" constant="300" id="Sq5-BK-egr"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7KO-Ec-lyh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="OgF-ac-2FC"/>
+                <constraint firstItem="7KO-Ec-lyh" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="XIR-6a-6Ny"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

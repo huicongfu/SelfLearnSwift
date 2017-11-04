@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ThirdWeekFourthlyDemo: UIViewController,UITableViewDelegate,UITableViewDataSource,UICollectionViewDelegate,UICollectionViewDataSource {
+class ThirdWeekFourthlyDemo: UIViewController,UITableViewDelegate,UITableViewDataSource,UICollectionViewDelegateFlowLayout,UICollectionViewDelegate,UICollectionViewDataSource {
     
     var tableView:UITableView?
     var dataArr = ["龙虾","蟹类","贝类","其它活鲜","冻品"]
@@ -36,7 +36,7 @@ class ThirdWeekFourthlyDemo: UIViewController,UITableViewDelegate,UITableViewDat
         flowLayout.minimumLineSpacing = 10
         flowLayout.minimumInteritemSpacing = 10
         flowLayout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10)
-        flowLayout.headerReferenceSize = CGSize.init(width: kWidth, height: 30)
+        flowLayout.headerReferenceSize = CGSize.init(width: kWidth, height: 50)
         let wi = (kWidth-100-30)/2.0
         flowLayout.itemSize = CGSize.init(width:wi , height: wi*1.5)
         self.collectionView = UICollectionView.init(frame: CGRect.init(x: 100, y: 64, width: kWidth-100, height: kHeight-64), collectionViewLayout: flowLayout)
@@ -45,6 +45,7 @@ class ThirdWeekFourthlyDemo: UIViewController,UITableViewDelegate,UITableViewDat
         self.collectionView?.backgroundColor = UIColor.white
         self.view.addSubview(self.collectionView!)
         self.collectionView?.register(UINib.init(nibName: "ThirdWeekFourthlyDemoCell", bundle: Bundle.main), forCellWithReuseIdentifier: "cell1")
+        self.collectionView?.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "head")
     }
     
     //MARK: - collectionView delegate
@@ -59,7 +60,17 @@ class ThirdWeekFourthlyDemo: UIViewController,UITableViewDelegate,UITableViewDat
         return cell
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let headView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "head", for: indexPath)
+        let label = UILabel.init(frame: CGRect.init(x: 5, y: 5, width: kWidth-100-10, height: 40))
+        label.backgroundColor = UIColor.lightGray
+        label.text = self.dataArr[selectedLeftIndex]
+        label.textColor = UIColor.black
+        label.textAlignment = .center
+        headView.addSubview(label)
+        
+        return headView
+    }
     
     //MARK: - tableview delegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -68,15 +79,18 @@ class ThirdWeekFourthlyDemo: UIViewController,UITableViewDelegate,UITableViewDat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:ThirdWeekFourthlyDemoTableCell = tableView.dequeueReusableCell(withIdentifier: "cell") as! ThirdWeekFourthlyDemoTableCell
+        
         cell.cellTitleLabel.text = self.dataArr[indexPath.row]
         
-//        cell.selectedBackgroundView = UIView.init(frame: CGRect.init(x: 5, y: 0, width: cell.frame.size.width-5, height: cell.frame.size.height))
-//        cell.selectedBackgroundView?.backgroundColor = UIColor.yellow
         if indexPath.row == selectedLeftIndex {
             tableView.selectRow(at: indexPath, animated: true, scrollPosition: .top)
-            cell.selectedBGView.isHidden = false
         }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.selectedLeftIndex = indexPath.row
+        self.collectionView?.reloadData()
     }
     
     override func didReceiveMemoryWarning() {

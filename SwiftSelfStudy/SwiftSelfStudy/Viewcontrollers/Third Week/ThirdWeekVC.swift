@@ -62,6 +62,10 @@ class ThirdWeekVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
             let vc = ThirdWeekFourthlyDemo()
             vc.navigationItem.title = dataArray[indexPath.row]
             self.navigationController?.pushViewController(vc, animated: true)
+        case 4:
+            let vc = ThirdWeekFifthDemo()
+            vc.navigationItem.title = dataArray[indexPath.row]
+            self.navigationController?.pushViewController(vc, animated: true)
             
         default:
             break

@@ -42,6 +42,11 @@
 		87026C301FACBED0005F51E6 /* ThirdWeekFourthlyDemoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87026C2E1FACBED0005F51E6 /* ThirdWeekFourthlyDemoCell.xib */; };
 		87026C331FACC631005F51E6 /* ThirdWeekFourthlyDemoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026C311FACC631005F51E6 /* ThirdWeekFourthlyDemoTableCell.swift */; };
 		87026C341FACC631005F51E6 /* ThirdWeekFourthlyDemoTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87026C321FACC631005F51E6 /* ThirdWeekFourthlyDemoTableCell.xib */; };
+		87026C361FADEC75005F51E6 /* ThirdWeekFifthDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026C351FADEC75005F51E6 /* ThirdWeekFifthDemo.swift */; };
+		87026C391FADEF8B005F51E6 /* ThirdWeekFifthDemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026C371FADEF8B005F51E6 /* ThirdWeekFifthDemoCell.swift */; };
+		87026C3A1FADEF8B005F51E6 /* ThirdWeekFifthDemoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87026C381FADEF8B005F51E6 /* ThirdWeekFifthDemoCell.xib */; };
+		87026C3D1FADF0CB005F51E6 /* ThirdWeekFifthDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026C3B1FADF0CB005F51E6 /* ThirdWeekFifthDetailVC.swift */; };
+		87026C3E1FADF0CB005F51E6 /* ThirdWeekFifthDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87026C3C1FADF0CB005F51E6 /* ThirdWeekFifthDetailVC.xib */; };
 		875E17441F9348F600020A3F /* FirstWeekVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875E17431F9348F600020A3F /* FirstWeekVC.swift */; };
 		875E17491F934D0A00020A3F /* FirstWeekOneDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875E17471F934D0A00020A3F /* FirstWeekOneDemo.swift */; };
 		875E174A1F934D0A00020A3F /* FirstWeekOneDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 875E17481F934D0A00020A3F /* FirstWeekOneDemo.xib */; };
@@ -116,6 +121,11 @@
 		87026C2E1FACBED0005F51E6 /* ThirdWeekFourthlyDemoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdWeekFourthlyDemoCell.xib; sourceTree = "<group>"; };
 		87026C311FACC631005F51E6 /* ThirdWeekFourthlyDemoTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdWeekFourthlyDemoTableCell.swift; sourceTree = "<group>"; };
 		87026C321FACC631005F51E6 /* ThirdWeekFourthlyDemoTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdWeekFourthlyDemoTableCell.xib; sourceTree = "<group>"; };
+		87026C351FADEC75005F51E6 /* ThirdWeekFifthDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdWeekFifthDemo.swift; sourceTree = "<group>"; };
+		87026C371FADEF8B005F51E6 /* ThirdWeekFifthDemoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdWeekFifthDemoCell.swift; sourceTree = "<group>"; };
+		87026C381FADEF8B005F51E6 /* ThirdWeekFifthDemoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdWeekFifthDemoCell.xib; sourceTree = "<group>"; };
+		87026C3B1FADF0CB005F51E6 /* ThirdWeekFifthDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdWeekFifthDetailVC.swift; sourceTree = "<group>"; };
+		87026C3C1FADF0CB005F51E6 /* ThirdWeekFifthDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdWeekFifthDetailVC.xib; sourceTree = "<group>"; };
 		875E17431F9348F600020A3F /* FirstWeekVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstWeekVC.swift; sourceTree = "<group>"; };
 		875E17471F934D0A00020A3F /* FirstWeekOneDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstWeekOneDemo.swift; sourceTree = "<group>"; };
 		875E17481F934D0A00020A3F /* FirstWeekOneDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstWeekOneDemo.xib; sourceTree = "<group>"; };
@@ -189,6 +199,11 @@
 				87026C321FACC631005F51E6 /* ThirdWeekFourthlyDemoTableCell.xib */,
 				87026C2D1FACBED0005F51E6 /* ThirdWeekFourthlyDemoCell.swift */,
 				87026C2E1FACBED0005F51E6 /* ThirdWeekFourthlyDemoCell.xib */,
+				87026C351FADEC75005F51E6 /* ThirdWeekFifthDemo.swift */,
+				87026C371FADEF8B005F51E6 /* ThirdWeekFifthDemoCell.swift */,
+				87026C381FADEF8B005F51E6 /* ThirdWeekFifthDemoCell.xib */,
+				87026C3B1FADF0CB005F51E6 /* ThirdWeekFifthDetailVC.swift */,
+				87026C3C1FADF0CB005F51E6 /* ThirdWeekFifthDetailVC.xib */,
 			);
 			path = "Third Week";
 			sourceTree = "<group>";
@@ -417,10 +432,12 @@
 				875E175A1F9F71B500020A3F /* SecondWeekOneDemo.xib in Resources */,
 				87A96CE21F8F967700CAC2B4 /* Main.storyboard in Resources */,
 				5B9EA15E1F9EE9FB00AF5CBB /* countryData.json in Resources */,
+				87026C3A1FADEF8B005F51E6 /* ThirdWeekFifthDemoCell.xib in Resources */,
 				87026C281FAA0241005F51E6 /* ThirdWeekThreeDemoCell.xib in Resources */,
 				87026C161FA21130005F51E6 /* SecondWeekOneDemoDetail.xib in Resources */,
 				87026C1C1FA57B15005F51E6 /* SecondWeekThreeDemoEdit.xib in Resources */,
 				875E17561F9C7AF100020A3F /* FirstWeekFourthlyDemo.xib in Resources */,
+				87026C3E1FADF0CB005F51E6 /* ThirdWeekFifthDetailVC.xib in Resources */,
 				5B8D25971FA4790700B9A43F /* SecondWeekThreeDemoCell.xib in Resources */,
 				87026C221FA8C901005F51E6 /* ThirdWeekTwoDemoCell.xib in Resources */,
 				87026C301FACBED0005F51E6 /* ThirdWeekFourthlyDemoCell.xib in Resources */,
@@ -451,11 +468,13 @@
 				5B5D014E1FA80D270057073D /* ThirdWeekOneDemo.swift in Sources */,
 				5B9EA15C1F9EDC8400AF5CBB /* FirstWeekFourthlyModel.swift in Sources */,
 				5B91357C1FA35591008723D3 /* SecondWeekFourthlyDemo.swift in Sources */,
+				87026C3D1FADF0CB005F51E6 /* ThirdWeekFifthDetailVC.swift in Sources */,
 				87026C2F1FACBED0005F51E6 /* ThirdWeekFourthlyDemoCell.swift in Sources */,
 				875E17491F934D0A00020A3F /* FirstWeekOneDemo.swift in Sources */,
 				875E17441F9348F600020A3F /* FirstWeekVC.swift in Sources */,
 				5B9135771FA34A85008723D3 /* SecondWeekTwoDemoCell.swift in Sources */,
 				875E17511F9A33E100020A3F /* FirstWeekThreeDemo.swift in Sources */,
+				87026C391FADEF8B005F51E6 /* ThirdWeekFifthDemoCell.swift in Sources */,
 				87026C181FA21B0C005F51E6 /* SecondWeekTwoDemo.swift in Sources */,
 				87A96CDF1F8F967700CAC2B4 /* ViewController.swift in Sources */,
 				875E17551F9C7AF100020A3F /* FirstWeekFourthlyDemo.swift in Sources */,
@@ -468,6 +487,7 @@
 				87026C271FAA0241005F51E6 /* ThirdWeekThreeDemoCell.swift in Sources */,
 				5B8D25821FA4581F00B9A43F /* SecondWeekFourthlyCell.swift in Sources */,
 				5B9EA15A1F9EC73800AF5CBB /* SecondWeekVC.swift in Sources */,
+				87026C361FADEC75005F51E6 /* ThirdWeekFifthDemo.swift in Sources */,
 				5B8D25991FA4830600B9A43F /* SecondWeekThirdDemoModel.swift in Sources */,
 				5B1B48321FAB478B00F669AB /* ThirdWeekThreeDemoModel.swift in Sources */,
 				87A96CDD1F8F967700CAC2B4 /* AppDelegate.swift in Sources */,

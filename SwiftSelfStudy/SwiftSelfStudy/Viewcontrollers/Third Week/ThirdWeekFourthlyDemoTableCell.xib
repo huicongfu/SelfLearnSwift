@@ -18,32 +18,21 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ISi-rc-6Fq">
-                        <rect key="frame" x="0.0" y="0.0" width="4" height="43.5"/>
-                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="4" id="XIM-83-ror"/>
-                        </constraints>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yv-w0-S9R">
-                        <rect key="frame" x="19" y="14.5" width="291" height="16"/>
+                        <rect key="frame" x="10" y="14.5" width="300" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="ISi-rc-6Fq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="C7h-oh-7Pe"/>
                     <constraint firstItem="5yv-w0-S9R" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Ey4-tj-TRw"/>
-                    <constraint firstItem="ISi-rc-6Fq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Qkf-om-yPx"/>
-                    <constraint firstItem="5yv-w0-S9R" firstAttribute="leading" secondItem="ISi-rc-6Fq" secondAttribute="trailing" constant="15" id="cF5-jI-vKz"/>
-                    <constraint firstAttribute="bottom" secondItem="ISi-rc-6Fq" secondAttribute="bottom" id="ohH-2k-1ix"/>
+                    <constraint firstItem="5yv-w0-S9R" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="KZO-9d-uwf"/>
                     <constraint firstAttribute="trailing" secondItem="5yv-w0-S9R" secondAttribute="trailing" constant="10" id="st0-JW-7Li"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="cellTitleLabel" destination="5yv-w0-S9R" id="rHm-pG-DRP"/>
-                <outlet property="selectedBGView" destination="ISi-rc-6Fq" id="M58-dA-MKa"/>
             </connections>
         </tableViewCell>
     </objects>
