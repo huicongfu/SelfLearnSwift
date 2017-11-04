@@ -15,7 +15,7 @@ class ThirdWeekFifthDetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationItem.title = "Detail"
         headImageView.image = UIImage.init(named: imageStr)
     }
 

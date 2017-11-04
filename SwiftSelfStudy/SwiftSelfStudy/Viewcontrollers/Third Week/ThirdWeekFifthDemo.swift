@@ -13,7 +13,7 @@ class ThirdWeekFifthDemo: UIViewController,UICollectionViewDataSource,UICollecti
     let array = ["3_5_1","3_5_2","3_5_3","3_5_4","3_5_5","3_5_6","3_5_2","3_5_3","3_5_4","3_5_5","3_5_3","3_5_4","3_5_5","3_5_1","3_5_2"]
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationController?.delegate = self
         self.createUI()
     }
     
@@ -48,6 +48,9 @@ class ThirdWeekFifthDemo: UIViewController,UICollectionViewDataSource,UICollecti
         let vc = ThirdWeekFifthDetailVC()
         vc.imageStr = self.array[indexPath.row]
         self.navigationController?.pushViewController(vc, animated: true)
+//        UIView.transition(with: (self.navigationController?.view)!, duration: 1, options: .transitionCrossDissolve, animations: { 
+//            self.navigationController?.pushViewController(vc, animated: false)
+//        }, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,7 +58,24 @@ class ThirdWeekFifthDemo: UIViewController,UICollectionViewDataSource,UICollecti
         // Dispose of any resources that can be recreated.
     }
     
+    
+    func navigationController(_ navigationController: UINavigationController,
+                              animationControllerFor operation: UINavigationControllerOperation,
+                              from fromVC: UIViewController, to toVC: UIViewController)
+        -> UIViewControllerAnimatedTransitioning? {
+            
+            if operation == .push {
+                return CustomPushAnimation() //push时,使用此动画
+            }
+            
+            if operation == .pop {
+                return CustomPopAnimation() //pop时,使用此动画
+            }
+            
+            return nil
+    }
 
+    
     /*
     // MARK: - Navigation
 
@@ -67,3 +87,58 @@ class ThirdWeekFifthDemo: UIViewController,UICollectionViewDataSource,UICollecti
     */
 
 }
+
+//MARK: Push 动画
+class CustomPushAnimation: NSObject, UIViewControllerAnimatedTransitioning {
+    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+        print("\(#function)")
+        
+        transitionContext.containerView.backgroundColor = UIColor.white // 修改过渡时的背景颜色
+        
+        let toViewController = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to)!
+        let fromViewController = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from)!
+        
+        transitionContext.containerView.insertSubview(toViewController.view, aboveSubview: fromViewController.view)
+        
+        toViewController.view.transform = CGAffineTransform(translationX: kWidth, y: kHeight)
+        //通过以下方式,可以组合2个动画效果
+//      toViewController.view.transform = CGAffineTransform(translationX: -100, y: -100).concatenating(CGAffineTransform(scaleX: 2, y: 2))
+        UIView.animate(withDuration: self.transitionDuration(using: transitionContext), animations: {
+            
+            toViewController.view.transform = CGAffineTransform.identity
+            fromViewController.view.transform = CGAffineTransform(translationX: -kWidth, y: -kHeight)
+        }) { (completion) in
+            fromViewController.view.transform = CGAffineTransform.identity
+            transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
+        }
+    }
+    func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
+        return 0.3
+    }
+}
+
+//MARK: Pop动画
+class CustomPopAnimation: NSObject, UIViewControllerAnimatedTransitioning {
+    
+    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+        transitionContext.containerView.backgroundColor = UIColor.white // 修改过渡时的背景颜色
+        
+        let toViewController = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to)!
+        let fromViewController = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from)!
+        
+        transitionContext.containerView.insertSubview(toViewController.view, belowSubview: fromViewController.view)
+        
+        toViewController.view.transform = CGAffineTransform(translationX: -kWidth, y: -kHeight)
+        UIView.animate(withDuration: self.transitionDuration(using: transitionContext), animations: {
+            toViewController.view.transform = CGAffineTransform.identity
+            fromViewController.view.transform = CGAffineTransform(translationX: kWidth, y: kHeight)
+        }) { (completion) in
+            fromViewController.view.transform = CGAffineTransform.identity
+            transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
+        }
+    }
+    func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
+        return 0.3
+    }
+}
+
