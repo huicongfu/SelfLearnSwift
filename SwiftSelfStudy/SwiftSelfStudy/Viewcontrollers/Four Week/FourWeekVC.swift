@@ -12,7 +12,7 @@ private let cellId = "cellId"
 
 class FourWeekVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
-    let dataArray = ["第一个","第二个","第三个-瀑布流","第四个-联动"]
+    let dataArray = ["第一个-时钟","第二个-萌帅的笑脸","第三个-","第四个-"]
     var tableView = UITableView.init(frame: UIScreen.main.bounds, style: UITableViewStyle.plain)
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +49,7 @@ class FourWeekVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
             vc.navigationItem.title = dataArray[indexPath.row]
             self.navigationController?.pushViewController(vc, animated: true)
         case 1:
-            let vc = ThirdWeekTwoDemo()
+            let vc = FourthlyWeekTwoDemo()
             vc.navigationItem.title = dataArray[indexPath.row]
             self.navigationController?.pushViewController(vc, animated: true)
             
