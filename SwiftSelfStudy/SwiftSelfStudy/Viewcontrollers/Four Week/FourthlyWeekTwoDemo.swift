@@ -37,6 +37,8 @@ class FourthlyWeekTwoDemo: UIViewController {
             self.grayView.center.y = self.grayView.center.y + 30
             self.grayView.frame.size.height = 150
             
+            self.view.layoutIfNeeded()
+            
         }) { (result) in
 //            如果上面的动画执行完成，执行下面的动画
             if result {

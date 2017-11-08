@@ -47,6 +47,10 @@
 		87026C3A1FADEF8B005F51E6 /* ThirdWeekFifthDemoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87026C381FADEF8B005F51E6 /* ThirdWeekFifthDemoCell.xib */; };
 		87026C3D1FADF0CB005F51E6 /* ThirdWeekFifthDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87026C3B1FADF0CB005F51E6 /* ThirdWeekFifthDetailVC.swift */; };
 		87026C3E1FADF0CB005F51E6 /* ThirdWeekFifthDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87026C3C1FADF0CB005F51E6 /* ThirdWeekFifthDetailVC.xib */; };
+		8753168A1FB32F3500F131F5 /* FourthlyWeekThreeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875316881FB32F3500F131F5 /* FourthlyWeekThreeDemo.swift */; };
+		8753168B1FB32F3500F131F5 /* FourthlyWeekThreeDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 875316891FB32F3500F131F5 /* FourthlyWeekThreeDemo.xib */; };
+		8753168E1FB33AF100F131F5 /* FourthlyWeekFourDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753168C1FB33AF100F131F5 /* FourthlyWeekFourDemo.swift */; };
+		8753168F1FB33AF100F131F5 /* FourthlyWeekFourDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8753168D1FB33AF100F131F5 /* FourthlyWeekFourDemo.xib */; };
 		875E17441F9348F600020A3F /* FirstWeekVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875E17431F9348F600020A3F /* FirstWeekVC.swift */; };
 		875E17491F934D0A00020A3F /* FirstWeekOneDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875E17471F934D0A00020A3F /* FirstWeekOneDemo.swift */; };
 		875E174A1F934D0A00020A3F /* FirstWeekOneDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 875E17481F934D0A00020A3F /* FirstWeekOneDemo.xib */; };
@@ -131,6 +135,10 @@
 		87026C381FADEF8B005F51E6 /* ThirdWeekFifthDemoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdWeekFifthDemoCell.xib; sourceTree = "<group>"; };
 		87026C3B1FADF0CB005F51E6 /* ThirdWeekFifthDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdWeekFifthDetailVC.swift; sourceTree = "<group>"; };
 		87026C3C1FADF0CB005F51E6 /* ThirdWeekFifthDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdWeekFifthDetailVC.xib; sourceTree = "<group>"; };
+		875316881FB32F3500F131F5 /* FourthlyWeekThreeDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthlyWeekThreeDemo.swift; sourceTree = "<group>"; };
+		875316891FB32F3500F131F5 /* FourthlyWeekThreeDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourthlyWeekThreeDemo.xib; sourceTree = "<group>"; };
+		8753168C1FB33AF100F131F5 /* FourthlyWeekFourDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthlyWeekFourDemo.swift; sourceTree = "<group>"; };
+		8753168D1FB33AF100F131F5 /* FourthlyWeekFourDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourthlyWeekFourDemo.xib; sourceTree = "<group>"; };
 		875E17431F9348F600020A3F /* FirstWeekVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstWeekVC.swift; sourceTree = "<group>"; };
 		875E17471F934D0A00020A3F /* FirstWeekOneDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstWeekOneDemo.swift; sourceTree = "<group>"; };
 		875E17481F934D0A00020A3F /* FirstWeekOneDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstWeekOneDemo.xib; sourceTree = "<group>"; };
@@ -275,11 +283,15 @@
 		879D13E31FB08A8600B4705E /* Four Week */ = {
 			isa = PBXGroup;
 			children = (
-				879D13F21FB1E01000B4705E /* FourthlyWeekTwoDemo.swift */,
-				879D13F31FB1E01000B4705E /* FourthlyWeekTwoDemo.xib */,
 				879D13E41FB08BA000B4705E /* FourWeekVC.swift */,
 				879D13E61FB08F1100B4705E /* FourthlyWeekOneDemo.swift */,
 				879D13E71FB08F1100B4705E /* FourthlyWeekOneDemo.xib */,
+				879D13F21FB1E01000B4705E /* FourthlyWeekTwoDemo.swift */,
+				879D13F31FB1E01000B4705E /* FourthlyWeekTwoDemo.xib */,
+				875316881FB32F3500F131F5 /* FourthlyWeekThreeDemo.swift */,
+				875316891FB32F3500F131F5 /* FourthlyWeekThreeDemo.xib */,
+				8753168C1FB33AF100F131F5 /* FourthlyWeekFourDemo.swift */,
+				8753168D1FB33AF100F131F5 /* FourthlyWeekFourDemo.xib */,
 			);
 			path = "Four Week";
 			sourceTree = "<group>";
@@ -454,11 +466,13 @@
 				87026C341FACC631005F51E6 /* ThirdWeekFourthlyDemoTableCell.xib in Resources */,
 				875E17521F9A33E100020A3F /* FirstWeekThreeDemo.xib in Resources */,
 				875E175A1F9F71B500020A3F /* SecondWeekOneDemo.xib in Resources */,
+				8753168F1FB33AF100F131F5 /* FourthlyWeekFourDemo.xib in Resources */,
 				87A96CE21F8F967700CAC2B4 /* Main.storyboard in Resources */,
 				5B9EA15E1F9EE9FB00AF5CBB /* countryData.json in Resources */,
 				87026C3A1FADEF8B005F51E6 /* ThirdWeekFifthDemoCell.xib in Resources */,
 				87026C281FAA0241005F51E6 /* ThirdWeekThreeDemoCell.xib in Resources */,
 				879D13F51FB1E01000B4705E /* FourthlyWeekTwoDemo.xib in Resources */,
+				8753168B1FB32F3500F131F5 /* FourthlyWeekThreeDemo.xib in Resources */,
 				87026C161FA21130005F51E6 /* SecondWeekOneDemoDetail.xib in Resources */,
 				87026C1C1FA57B15005F51E6 /* SecondWeekThreeDemoEdit.xib in Resources */,
 				875E17561F9C7AF100020A3F /* FirstWeekFourthlyDemo.xib in Resources */,
@@ -495,6 +509,7 @@
 				5B9EA15C1F9EDC8400AF5CBB /* FirstWeekFourthlyModel.swift in Sources */,
 				879D13E51FB08BA000B4705E /* FourWeekVC.swift in Sources */,
 				5B91357C1FA35591008723D3 /* SecondWeekFourthlyDemo.swift in Sources */,
+				8753168E1FB33AF100F131F5 /* FourthlyWeekFourDemo.swift in Sources */,
 				87026C3D1FADF0CB005F51E6 /* ThirdWeekFifthDetailVC.swift in Sources */,
 				87026C2F1FACBED0005F51E6 /* ThirdWeekFourthlyDemoCell.swift in Sources */,
 				875E17491F934D0A00020A3F /* FirstWeekOneDemo.swift in Sources */,
@@ -518,6 +533,7 @@
 				5B8D25991FA4830600B9A43F /* SecondWeekThirdDemoModel.swift in Sources */,
 				5B1B48321FAB478B00F669AB /* ThirdWeekThreeDemoModel.swift in Sources */,
 				87A96CDD1F8F967700CAC2B4 /* AppDelegate.swift in Sources */,
+				8753168A1FB32F3500F131F5 /* FourthlyWeekThreeDemo.swift in Sources */,
 				87026C2C1FACA5C6005F51E6 /* ThirdWeekFourthlyDemo.swift in Sources */,
 				5B5D014C1FA7FF7A0057073D /* ThirdWeekVC.swift in Sources */,
 				5B91357A1FA3554B008723D3 /* SecondWeekThreeDemo.swift in Sources */,
