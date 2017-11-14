@@ -20,7 +20,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         super.viewDidLoad()
         self.navigationItem.title = "Swift Demo"
         
-        for index in 0..<4 {
+        for index in 0..<8 {
             dataArray.add("第\(index+1)周Demo")
         }
         
@@ -75,6 +75,10 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 //            break
         case 3:
             let vc = FourWeekVC()
+            vc.navigationItem.title = dataArray[indexPath.row] as? String
+            self.navigationController?.pushViewController(vc , animated: true)
+        case 4:
+            let vc = FifthlyWeekVC()
             vc.navigationItem.title = dataArray[indexPath.row] as? String
             self.navigationController?.pushViewController(vc , animated: true)
             
