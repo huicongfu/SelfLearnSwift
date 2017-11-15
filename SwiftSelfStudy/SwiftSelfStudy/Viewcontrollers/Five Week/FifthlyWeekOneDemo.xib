@@ -11,7 +11,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FifthlyWeekOneDemo" customModule="SwiftSelfStudy" customModuleProvider="target">
             <connections>
-                <outlet property="animaBtnClck" destination="3kr-sU-th1" id="OLb-vc-g17"/>
                 <outlet property="inputProgressTF" destination="xdX-HY-HzM" id="jlt-7r-BHK"/>
                 <outlet property="progressView" destination="m9y-Ox-GGy" id="fYF-06-fT7"/>
                 <outlet property="showProgressLabel" destination="3Fs-0B-hSJ" id="zaz-Cw-Erc"/>
@@ -52,6 +51,9 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kr-sU-th1">
                     <rect key="frame" x="225.5" y="528.5" width="69" height="30"/>
                     <state key="normal" title="Animation"/>
+                    <connections>
+                        <action selector="animateBtnClicked:" destination="-1" eventType="touchUpInside" id="Srf-Xr-oyJ"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已使用流量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ik1-hu-io4">
                     <rect key="frame" x="151.5" y="361.5" width="71.5" height="17"/>

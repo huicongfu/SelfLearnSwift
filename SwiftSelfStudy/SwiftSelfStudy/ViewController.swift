@@ -20,7 +20,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         super.viewDidLoad()
         self.navigationItem.title = "Swift Demo"
         
-        for index in 0..<8 {
+        for index in 0..<5 {
             dataArray.add("第\(index+1)周Demo")
         }
         
