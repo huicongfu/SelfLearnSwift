@@ -12,7 +12,7 @@ private let cellId = "cellId"
 
 class FifthlyWeekVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
-    let dataArray = ["第一个-动态流量图","第二个-播放指示器","第三个-","第四个-"]
+    let dataArray = ["第一个-动态流量图","第二个-播放指示器","第三个-视频背景","第四个-旋转动画"]
     var tableView = UITableView.init(frame: UIScreen.main.bounds, style: UITableViewStyle.plain)
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,11 +54,11 @@ class FifthlyWeekVC: UIViewController,UITableViewDataSource,UITableViewDelegate 
             self.navigationController?.pushViewController(vc, animated: true)
             
         case 2:
-            let vc = FourthlyWeekThreeDemo()
+            let vc = FifthlyWeekThreeDemo()
             self.navigationController?.pushViewController(vc, animated: true)
             
         case 3:
-            let vc = FourthlyWeekFourDemo()
+            let vc = FifthlyweekFourDemo()
             vc.navigationItem.title = dataArray[indexPath.row]
             self.navigationController?.pushViewController(vc, animated: true)
             

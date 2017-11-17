@@ -55,6 +55,11 @@
 		8753168B1FB32F3500F131F5 /* FourthlyWeekThreeDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 875316891FB32F3500F131F5 /* FourthlyWeekThreeDemo.xib */; };
 		8753168E1FB33AF100F131F5 /* FourthlyWeekFourDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753168C1FB33AF100F131F5 /* FourthlyWeekFourDemo.swift */; };
 		8753168F1FB33AF100F131F5 /* FourthlyWeekFourDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8753168D1FB33AF100F131F5 /* FourthlyWeekFourDemo.xib */; };
+		875316921FBF0B0900F131F5 /* FifthlyWeekThreeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875316901FBF0B0900F131F5 /* FifthlyWeekThreeDemo.swift */; };
+		875316931FBF0B0900F131F5 /* FifthlyWeekThreeDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 875316911FBF0B0900F131F5 /* FifthlyWeekThreeDemo.xib */; };
+		875316961FBF0B4800F131F5 /* login-bg-video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 875316951FBF0B4800F131F5 /* login-bg-video.mp4 */; };
+		875316981FBF21E100F131F5 /* FifthlyweekFourDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875316971FBF21E100F131F5 /* FifthlyweekFourDemo.swift */; };
+		8753169A1FBF224600F131F5 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875316991FBF224600F131F5 /* LoadingView.swift */; };
 		875E17441F9348F600020A3F /* FirstWeekVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875E17431F9348F600020A3F /* FirstWeekVC.swift */; };
 		875E17491F934D0A00020A3F /* FirstWeekOneDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875E17471F934D0A00020A3F /* FirstWeekOneDemo.swift */; };
 		875E174A1F934D0A00020A3F /* FirstWeekOneDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 875E17481F934D0A00020A3F /* FirstWeekOneDemo.xib */; };
@@ -147,6 +152,11 @@
 		875316891FB32F3500F131F5 /* FourthlyWeekThreeDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourthlyWeekThreeDemo.xib; sourceTree = "<group>"; };
 		8753168C1FB33AF100F131F5 /* FourthlyWeekFourDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthlyWeekFourDemo.swift; sourceTree = "<group>"; };
 		8753168D1FB33AF100F131F5 /* FourthlyWeekFourDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourthlyWeekFourDemo.xib; sourceTree = "<group>"; };
+		875316901FBF0B0900F131F5 /* FifthlyWeekThreeDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FifthlyWeekThreeDemo.swift; sourceTree = "<group>"; };
+		875316911FBF0B0900F131F5 /* FifthlyWeekThreeDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FifthlyWeekThreeDemo.xib; sourceTree = "<group>"; };
+		875316951FBF0B4800F131F5 /* login-bg-video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "login-bg-video.mp4"; sourceTree = "<group>"; };
+		875316971FBF21E100F131F5 /* FifthlyweekFourDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FifthlyweekFourDemo.swift; sourceTree = "<group>"; };
+		875316991FBF224600F131F5 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		875E17431F9348F600020A3F /* FirstWeekVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstWeekVC.swift; sourceTree = "<group>"; };
 		875E17471F934D0A00020A3F /* FirstWeekOneDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstWeekOneDemo.swift; sourceTree = "<group>"; };
 		875E17481F934D0A00020A3F /* FirstWeekOneDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstWeekOneDemo.xib; sourceTree = "<group>"; };
@@ -237,10 +247,15 @@
 		5B9652B11FBAA0430030A3BA /* Five Week */ = {
 			isa = PBXGroup;
 			children = (
+				875316941FBF0B4800F131F5 /* Other */,
 				5B9652B21FBAC4D90030A3BA /* FifthlyWeekVC.swift */,
 				5B9652B51FBAE6800030A3BA /* FifthlyWeekOneDemo.swift */,
 				5B9652B61FBAE6800030A3BA /* FifthlyWeekOneDemo.xib */,
 				5B5229D71FBC57DB00294B8E /* FifthlyWeekTwoDemo.swift */,
+				875316901FBF0B0900F131F5 /* FifthlyWeekThreeDemo.swift */,
+				875316911FBF0B0900F131F5 /* FifthlyWeekThreeDemo.xib */,
+				875316971FBF21E100F131F5 /* FifthlyweekFourDemo.swift */,
+				875316991FBF224600F131F5 /* LoadingView.swift */,
 			);
 			path = "Five Week";
 			sourceTree = "<group>";
@@ -268,6 +283,14 @@
 				5B8D25811FA4581F00B9A43F /* SecondWeekFourthlyCell.xib */,
 			);
 			path = "Second Week";
+			sourceTree = "<group>";
+		};
+		875316941FBF0B4800F131F5 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				875316951FBF0B4800F131F5 /* login-bg-video.mp4 */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		875E173F1F9343CD00020A3F /* Viewcontrollers */ = {
@@ -480,6 +503,7 @@
 				5B5D01541FA82A440057073D /* ThirdWeekOneCell.xib in Resources */,
 				87A96CE71F8F967700CAC2B4 /* LaunchScreen.storyboard in Resources */,
 				87A96CE41F8F967700CAC2B4 /* Assets.xcassets in Resources */,
+				875316931FBF0B0900F131F5 /* FifthlyWeekThreeDemo.xib in Resources */,
 				5B8D25831FA4581F00B9A43F /* SecondWeekFourthlyCell.xib in Resources */,
 				5B9652B81FBAE6800030A3BA /* FifthlyWeekOneDemo.xib in Resources */,
 				879D13E91FB08F1100B4705E /* FourthlyWeekOneDemo.xib in Resources */,
@@ -494,6 +518,7 @@
 				87026C281FAA0241005F51E6 /* ThirdWeekThreeDemoCell.xib in Resources */,
 				879D13F51FB1E01000B4705E /* FourthlyWeekTwoDemo.xib in Resources */,
 				8753168B1FB32F3500F131F5 /* FourthlyWeekThreeDemo.xib in Resources */,
+				875316961FBF0B4800F131F5 /* login-bg-video.mp4 in Resources */,
 				87026C161FA21130005F51E6 /* SecondWeekOneDemoDetail.xib in Resources */,
 				87026C1C1FA57B15005F51E6 /* SecondWeekThreeDemoEdit.xib in Resources */,
 				875E17561F9C7AF100020A3F /* FirstWeekFourthlyDemo.xib in Resources */,
@@ -532,17 +557,20 @@
 				5B91357C1FA35591008723D3 /* SecondWeekFourthlyDemo.swift in Sources */,
 				8753168E1FB33AF100F131F5 /* FourthlyWeekFourDemo.swift in Sources */,
 				87026C3D1FADF0CB005F51E6 /* ThirdWeekFifthDetailVC.swift in Sources */,
+				875316921FBF0B0900F131F5 /* FifthlyWeekThreeDemo.swift in Sources */,
 				87026C2F1FACBED0005F51E6 /* ThirdWeekFourthlyDemoCell.swift in Sources */,
 				875E17491F934D0A00020A3F /* FirstWeekOneDemo.swift in Sources */,
 				875E17441F9348F600020A3F /* FirstWeekVC.swift in Sources */,
 				5B9135771FA34A85008723D3 /* SecondWeekTwoDemoCell.swift in Sources */,
 				875E17511F9A33E100020A3F /* FirstWeekThreeDemo.swift in Sources */,
 				87026C391FADEF8B005F51E6 /* ThirdWeekFifthDemoCell.swift in Sources */,
+				8753169A1FBF224600F131F5 /* LoadingView.swift in Sources */,
 				5B9652B71FBAE6800030A3BA /* FifthlyWeekOneDemo.swift in Sources */,
 				87026C181FA21B0C005F51E6 /* SecondWeekTwoDemo.swift in Sources */,
 				87A96CDF1F8F967700CAC2B4 /* ViewController.swift in Sources */,
 				875E17551F9C7AF100020A3F /* FirstWeekFourthlyDemo.swift in Sources */,
 				5B5D01531FA82A440057073D /* ThirdWeekOneCell.swift in Sources */,
+				875316981FBF21E100F131F5 /* FifthlyweekFourDemo.swift in Sources */,
 				5B8D25961FA4790700B9A43F /* SecondWeekThreeDemoCell.swift in Sources */,
 				87026C1E1FA8C7FE005F51E6 /* ThirdWeekTwoDemo.swift in Sources */,
 				875E174D1F9665A900020A3F /* FirstWeekTwoDemo.swift in Sources */,
