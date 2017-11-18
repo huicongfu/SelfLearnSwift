@@ -9,13 +9,28 @@
 import UIKit
 
 class FifthlyweekFourDemo: UIViewController {
-
+    
+    var rotateView:UIView?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         createUI()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.navigationBar.isHidden = false
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
