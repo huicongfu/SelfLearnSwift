@@ -13,7 +13,8 @@ class SixthWeekOneDemo: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let roller = RollerCoasterLayer.init(frame: self.view.bounds)
+        self.view.layer.addSublayer(roller)
     }
     
     override func viewWillAppear(_ animated: Bool) {
