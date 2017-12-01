@@ -75,6 +75,9 @@
 		875E175A1F9F71B500020A3F /* SecondWeekOneDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 875E17581F9F71B500020A3F /* SecondWeekOneDemo.xib */; };
 		875E175C1FA0C59700020A3F /* SecondWeekOneDemoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875E175B1FA0C59700020A3F /* SecondWeekOneDemoModel.swift */; };
 		8779BD9F1FC9942800EADE04 /* RollerCoasterLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8779BD9E1FC9942800EADE04 /* RollerCoasterLayer.swift */; };
+		8779BDA21FD1849700EADE04 /* SevenWeekVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8779BDA11FD1849700EADE04 /* SevenWeekVC.swift */; };
+		8779BDA41FD18FD600EADE04 /* SevenWeekOneDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8779BDA31FD18FD600EADE04 /* SevenWeekOneDemo.swift */; };
+		8779BDA61FD1929400EADE04 /* GyroBallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8779BDA51FD1929400EADE04 /* GyroBallView.swift */; };
 		879D13E51FB08BA000B4705E /* FourWeekVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879D13E41FB08BA000B4705E /* FourWeekVC.swift */; };
 		879D13E81FB08F1100B4705E /* FourthlyWeekOneDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879D13E61FB08F1100B4705E /* FourthlyWeekOneDemo.swift */; };
 		879D13E91FB08F1100B4705E /* FourthlyWeekOneDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 879D13E71FB08F1100B4705E /* FourthlyWeekOneDemo.xib */; };
@@ -175,6 +178,9 @@
 		875E17581F9F71B500020A3F /* SecondWeekOneDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondWeekOneDemo.xib; sourceTree = "<group>"; };
 		875E175B1FA0C59700020A3F /* SecondWeekOneDemoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondWeekOneDemoModel.swift; sourceTree = "<group>"; };
 		8779BD9E1FC9942800EADE04 /* RollerCoasterLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RollerCoasterLayer.swift; sourceTree = "<group>"; };
+		8779BDA11FD1849700EADE04 /* SevenWeekVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SevenWeekVC.swift; sourceTree = "<group>"; };
+		8779BDA31FD18FD600EADE04 /* SevenWeekOneDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SevenWeekOneDemo.swift; sourceTree = "<group>"; };
+		8779BDA51FD1929400EADE04 /* GyroBallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GyroBallView.swift; sourceTree = "<group>"; };
 		879D13E41FB08BA000B4705E /* FourWeekVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourWeekVC.swift; sourceTree = "<group>"; };
 		879D13E61FB08F1100B4705E /* FourthlyWeekOneDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthlyWeekOneDemo.swift; sourceTree = "<group>"; };
 		879D13E71FB08F1100B4705E /* FourthlyWeekOneDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourthlyWeekOneDemo.xib; sourceTree = "<group>"; };
@@ -312,6 +318,7 @@
 		875E173F1F9343CD00020A3F /* Viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
+				8779BDA01FD1845300EADE04 /* Seven Week */,
 				5B45E4561FC6F15F00085B34 /* Six Week */,
 				5B9652B11FBAA0430030A3BA /* Five Week */,
 				879D13E31FB08A8600B4705E /* Four Week */,
@@ -338,6 +345,16 @@
 				5B9EA15D1F9EE9FB00AF5CBB /* countryData.json */,
 			);
 			path = "First Week";
+			sourceTree = "<group>";
+		};
+		8779BDA01FD1845300EADE04 /* Seven Week */ = {
+			isa = PBXGroup;
+			children = (
+				8779BDA11FD1849700EADE04 /* SevenWeekVC.swift */,
+				8779BDA31FD18FD600EADE04 /* SevenWeekOneDemo.swift */,
+				8779BDA51FD1929400EADE04 /* GyroBallView.swift */,
+			);
+			path = "Seven Week";
 			sourceTree = "<group>";
 		};
 		879D13E31FB08A8600B4705E /* Four Week */ = {
@@ -585,8 +602,10 @@
 				8753169A1FBF224600F131F5 /* LoadingView.swift in Sources */,
 				5B9652B71FBAE6800030A3BA /* FifthlyWeekOneDemo.swift in Sources */,
 				87026C181FA21B0C005F51E6 /* SecondWeekTwoDemo.swift in Sources */,
+				8779BDA41FD18FD600EADE04 /* SevenWeekOneDemo.swift in Sources */,
 				5B45E4581FC6F27500085B34 /* SixthWeekVC.swift in Sources */,
 				87A96CDF1F8F967700CAC2B4 /* ViewController.swift in Sources */,
+				8779BDA21FD1849700EADE04 /* SevenWeekVC.swift in Sources */,
 				875E17551F9C7AF100020A3F /* FirstWeekFourthlyDemo.swift in Sources */,
 				5B5D01531FA82A440057073D /* ThirdWeekOneCell.swift in Sources */,
 				875316981FBF21E100F131F5 /* FifthlyweekFourDemo.swift in Sources */,
@@ -613,6 +632,7 @@
 				87026C211FA8C901005F51E6 /* ThirdWeekTwoDemoCell.swift in Sources */,
 				5B5D01561FA874F50057073D /* ThirdWeekOneFlowLayout.swift in Sources */,
 				87026C151FA21130005F51E6 /* SecondWeekOneDemoDetail.swift in Sources */,
+				8779BDA61FD1929400EADE04 /* GyroBallView.swift in Sources */,
 				8779BD9F1FC9942800EADE04 /* RollerCoasterLayer.swift in Sources */,
 				875E17591F9F71B500020A3F /* SecondWeekOneDemo.swift in Sources */,
 				87026C241FA9FFCA005F51E6 /* ThirdWeekThreeDemo.swift in Sources */,
@@ -773,7 +793,7 @@
 				DEVELOPMENT_TEAM = 326Y8YH5QB;
 				INFOPLIST_FILE = SwiftSelfStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fhc.SwiftSelfStudy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hunuo.SSS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
@@ -788,7 +808,7 @@
 				DEVELOPMENT_TEAM = 326Y8YH5QB;
 				INFOPLIST_FILE = SwiftSelfStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fhc.SwiftSelfStudy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hunuo.SSS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
