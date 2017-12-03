@@ -46,7 +46,7 @@ class SevenWeekVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
             let vc = SevenWeekOneDemo.init()
             self.navigationController?.pushViewController(vc, animated: true)
         case 1:
-            let vc = FifthlyWeekTwoDemo()
+            let vc = SevenWeekTwoDemo()
             vc.navigationItem.title = dataArray[indexPath.row]
             self.navigationController?.pushViewController(vc, animated: true)
             

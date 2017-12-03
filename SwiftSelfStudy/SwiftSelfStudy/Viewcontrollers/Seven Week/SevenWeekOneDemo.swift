@@ -54,7 +54,7 @@ class SevenWeekOneDemo: UIViewController {
             coreManager.gyroUpdateInterval = 0.1
             //Push方式获取和处理数据，这里我们一样只是做了简单的打印。把采样的工作放在了主线程中。
             coreManager.startGyroUpdates(to: OperationQueue.main, withHandler: { (gyroData, error) in
-                 print("X = \(self.manager.gyroData?.rotationRate.x ?? 0)","Y = \(self.manager.gyroData?.rotationRate.y ?? 0)","Z = \(self.manager.gyroData?.rotationRate.z ?? 0)")
+                 print("X = \(self.coreManager.gyroData?.rotationRate.x ?? 0)","Y = \(self.coreManager.gyroData?.rotationRate.y ?? 0)","Z = \(self.coreManager.gyroData?.rotationRate.z ?? 0)")
             })
         }else {
             print("陀螺仪不可用")
