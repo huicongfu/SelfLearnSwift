@@ -15,26 +15,19 @@ class SevenWeekTwoDemo: UICollectionViewController,UICollectionViewDelegateFlowL
     let imageLoadQueu = OperationQueue()
     var imageOps = [(SevenWeekTwoItem, Operation?)]()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.collectionView?.backgroundColor = UIColor.white
        imageLoadQueu.maxConcurrentOperationCount = 2
         imageLoadQueu.qualityOfService = .userInitiated
-        let layout = UICollectionViewFlowLayout.init()
         
-        self.collectionView?.setCollectionViewLayout(layout, animated: true)
-        self.collectionView?.register(CollectionCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        self.collectionView?.register(UINib.init(nibName: "CollectionCell", bundle: Bundle.main), forCellWithReuseIdentifier: reuseIdentifier)
 //        使用map 函数进行改造，创建imageOps
         imageOps = SevenWeekTwoItem.creatItems(count: 100).map({ (images) -> (SevenWeekTwoItem, Operation?) in
             return (images, nil)
         })
-        self.collectionView?.reloadData()
         
-        // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
+        self.collectionView?.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
